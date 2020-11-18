@@ -1,0 +1,5 @@
+tamanho: 260x334
+borrão: 40
+brilho: -40
+
+site: Pixlr X

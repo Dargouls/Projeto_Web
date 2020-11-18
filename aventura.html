@@ -1,0 +1,159 @@
+
+<!--Terceira página do site, onde ficam os participantes do projeto-->
+
+<!doctype html>
+<html lang="pt-br">
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EbookReader</title>
+        <link rel="stylesheet" href="CSS (padraoDoSite).css">
+        <link rel="stylesheet" href="CSS (aventura).css"/>
+        <link rel="stylesheet" href="Images/ebook.png">
+        <link rel="stylesheet" href="Images/Madeira clara.png">
+        <link rel="stylesheet" href="Images/Madeira escura.jpg">
+        <link rel="stylesheet" href="Images/Seta1.png">
+        <link rel="shortcut icon" href="ebook.ico">
+        
+    </head>
+
+  <body>
+    <header> <!--Barra superior-->
+      <table> <!--Lista para organizar o conteúdo-->
+        <th id="imgLogo">
+          <a href="index.html"><img src="Images/ebook.png"></a>
+        </th>
+        <th class="fabiana-font" id="txtLogo">
+          <a href="index.html">Ebook Reader</a>
+        </th>
+        <th>
+          <nav> <!--Botões de navegação-->
+            <ul id="botoesNav";> <!--Lista para organizar os botões-->
+              <li class="navButton"><a href="index.html">Início</a></li>
+              <li class="navButton"><a href="leitura.html">PDF (retirar)</a></li> <!--Esse botão está sendo mostrado apenas a fim de ver todas as páginas do site. Será retirado no momento q houver JS-->
+              <li class="navButton"><a href="sobre.html">Sobre</a></li>
+              <li class="navButton" id="dropdown"> <!--Botão com dropdown-->
+                <a class="dropbtn">Livros ↓</a> <!--Texto do botão-->
+                <div class="dropdown-content"> <!--Conteúdo do dropdown-->
+                  <a href="generos.html">Indicações de livros</a>
+                  <a href="escritores.html">Hall dos Escritores</a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </th>
+      </table>
+    </header> <!--Fim do header-->
+    
+    <div id="meio">
+      <h1 id="tituloPagina">Livros de Aventura</h1> <!--Título da página-->
+
+      <div class="temaFundo" id="emAlgumLugarNasEstrelas">
+        <table class="tabLivro" id="livro-emAlgumLugarNasEstrelas"> <!--Tabela do livro-->
+          <th><img class="capaLivro" src="Images/Capas-Livros/lugarNasEstrelas-livro-aventura.jpg" alt=""></th> <!--Capa do livro-->
+          <tr>
+            <td><h2>Em Algum Lugar nas Estrelas</h2></td>  <!--T�tulo do livro-->
+          </tr>  
+          <tr>
+            <td>  <!--Sinopse-->
+              <p>
+                Um romance intenso sobre a difícil arte de crescer em um mundo que nem sempre parece satisfeito com a nossa presença. Pelo menos é desse jeito que as coisas têm acontecido para Jack Baker. A Segunda Guerra Mundial estava no fim, mas ele não tinha motivos para comemorar.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Data da primeira publicação: 8 de janeiro de 2013</p>
+            </td>
+          </tr>
+          <tr>
+            <td> <!--Autor-->
+              <p>Autor: Clare Vanderpool</p>
+            </td>
+          </tr>
+          <tr>
+            <td> <!--Link para a compra-->
+              <a class="link" target="_blank" href="https://m.magazineluiza.com.br/livro-em-algum-lugar-nas-estrelas/p/221969000/li/llit/?&amp;force=2&amp;seller_id=magazineluiza&amp;&amp;utm_source=google&amp;utm_medium=pla&amp;utm_campaign=&amp;partner_id=54242&amp;gclid=CjwKCAiAqJn9BRB0EiwAJ1SztQcP3PW7WGE2dyAqyo3aupE3Hh7KF-D7l9AAiHLLEOPfeivAp_vXpRoCyqcQAvD_BwE">
+                <p class="link">Link para adquirir</p>
+              </a>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="temaFundo" id="sherlockHolmes">
+        <table class="tabLivro" id="livro-sherlockHolmes"> <!--Tabela do livro-->
+          <th><img class="capaLivro" src="Images/Capas-Livros/holmes-livro-aventura.jpeg" alt=""></th> <!--Capa do livro-->
+          <tr>
+            <td><h2>Sherlock Holmes: Obra completa</h2></td>  <!--T�tulo do livro-->
+          </tr>  
+          <tr>
+            <td>  <!--Sinopse-->
+              <p>
+                Resenha: As Aventuras de Sherlock Holmes de Arthur Conan Doyle. Policial. Contos com enigmas e mistérios que irão prender sua atenção do começo ao fim do livro. ... Sherlock Holmes é um famoso detetive, em tanto excêntrico, que tenta solucionar mistérios acompanhado por seu fiel escudeiro Watson.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Data do primeiro livro (Um estudo em vermelho): 1887</p>
+            </td>
+          </tr>
+          <tr>
+            <td> <!--Autor-->
+              <p>Autor: Arthur Conan Doyle</p>
+            </td>
+          </tr>
+          <tr>
+            <td> <!--Link para a compra-->
+              <a class="link" target="_blank" href="https://www.amazon.com.br/Sherlock-Holmes-Arthur-Conan-Doyle-ebook/dp/B00Y39EX48/ref=asc_df_B00Y39EX48/?tag=googleshopp06-20&amp;linkCode=df0&amp;hvadid=379736448172&amp;hvpos=&amp;hvnetw=g&amp;hvrand=4907907989208367749&amp;hvpone=&amp;hvptwo=&amp;hvqmt=&amp;hvdev=m&amp;hvdvcmdl=&amp;hvlocint=&amp;hvlocphy=1001506&amp;hvtargid=pla-481945650409&amp;psc=1">
+                <p class="link">Link para adquirir</p>
+              </a>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="temaFundo" id="duna">
+        <table class="tabLivro" id="livro-duna"> <!--Tabela do livro-->
+          <th><img class="capaLivro" src="Images/Capas-Livros/Duna-livro-aventura.jpg" alt=""></th> <!--Capa do livro-->
+          <tr>
+            <td><h2>Duna</h2></td>  <!--T�tulo do livro-->
+          </tr>  
+          <tr>
+            <td>  <!--Sinopse-->
+              <p>
+                Duna se passa em um futuro distante no meio de um império intergaláctico feudal em expansão, onde feudos planetários são controlados por Casas nobres que devem aliança à casta imperial da Casa Corrino. ... Além desses temas, Duna trata também de aspectos importantes da ecologia e da biologia.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Data da primeira publicação: 1 de agosto de 1965</p>
+            </td>
+          </tr>
+          <tr>
+            <td> <!--Autor-->
+              <p>Autor: Frank Herbert</p>
+            </td>
+          </tr>
+          <tr>
+            <td> <!--Link para a compra-->
+              <a class="link" target="_blank" href="https://www.amazon.com.br/Duna-Frank-Herbert/dp/857657313X/ref=asc_df_857657313X/?tag=googleshopp06-20&amp;linkCode=df0&amp;hvadid=379720929259&amp;hvpos=&amp;hvnetw=g&amp;hvrand=15419334879953777181&amp;hvpone=&amp;hvptwo=&amp;hvqmt=&amp;hvdev=m&amp;hvdvcmdl=&amp;hvlocint=&amp;hvlocphy=1001506&amp;hvtargid=pla-395982488362&amp;psc=1">
+                <p class="link">Link para adquirir</p>
+              </a>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+      
+<!--Footer-->
+    <div class="footer">
+      <ul>
+        <li><span>© EbookReader 2020</span></li>
+        <li id="email"><span>SAC: SuporteAL@hotmail.com</span></li>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+/*CSS da página inicial*/
+
+
+body{ /*Zerando as margens do body e colocando background*/
+    margin: 0%;
+    background-color: #18191a;
+    background-size: 100%; /*Há um problema de responsividade na imagem de background q não sabemos resolver ainda*/
+    background-image: url("Images/book-pages - cortado.png");
+    background-position-y: 120%; /*posição do plano de fundo em Y*/
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /*background-color:#e0e0e0;*/
+}
+#interface{ /* div central da página*/
+    text-align: center;
+    width: 100%;
+    margin-top: 5%;
+}
+#lerPDF{ /*Botão para ler um documento*/
+  width: 400px;/*30%;*/
+  height: 150px;
+  background-color: rgb(157, 151, 253);
+  box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.30);
+  border-radius: 7px;
+  font-size: 35px;
+  line-height: 50px;
+  color: white;
+  text-align: center;
+  border-style: dotted;
+  transition: background-color 0.25s ease-in-out, box-shadow 0.35s ease-out;
+}
+#lerPDF:hover{ /*Evento ao passar o mouse em cima*/
+    background: rgb(131, 123, 243);
+    box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.7);
+    
+}

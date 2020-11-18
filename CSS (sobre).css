@@ -1,0 +1,17 @@
+/*CSS da página Creditos.html*/
+
+
+body
+{
+    margin: 0%;
+    background-color:#18191a;
+}
+#interface{
+    text-align: center;
+    margin: 12%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    background-color: #313436;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+}

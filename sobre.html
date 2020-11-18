@@ -1,0 +1,68 @@
+
+<!--Terceira página do site, onde ficam os participantes do projeto-->
+
+<!doctype html>
+<html lang="pt-br">
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EbookReader</title>
+        <link rel="stylesheet" href="CSS (PadraoDoSite).css">
+        <link rel="stylesheet" href="CSS (Sobre).css"/>
+        <link rel="stylesheet" href="Images/ebook.png">
+        <link rel="stylesheet" href="Images/Madeira clara.png">
+        <link rel="stylesheet" href="Images/Madeira escura.jpg">
+        <link rel="stylesheet" href="Images/Seta1.png">
+        <link rel="shortcut icon" href="ebook.ico">
+        
+    </head>
+
+  <body>
+    <header> <!--Barra superior-->
+      <table> <!--Lista para organizar o conteúdo-->
+        <th id="imgLogo">
+          <a href="index.html"><img src="Images/ebook.png"></a>
+        </th>
+        <th class="fabiana-font" id="txtLogo">
+          <a href="index.html">Ebook Reader</a>
+        </th>
+        <th>
+          <nav> <!--Botões de navegação-->
+            <ul id="botoesNav";> <!--Lista para organizar os botões-->
+              <li class="navButton"><a href="index.html">Início</a></li>
+              <li class="navButton"><a href="leitura.html">PDF (retirar)</a></li> <!--Esse botão está sendo mostrado apenas a fim de ver todas as páginas do site. Será retirado no momento q houver JS-->
+              <li class="navButton"><a href="sobre.html">Sobre</a></li>
+              <li class="navButton" id="dropdown"> <!--Botão com dropdown-->
+                <a class="dropbtn">Livros ↓</a> <!--Texto do botão-->
+                <div class="dropdown-content"> <!--Conteúdo do dropdown-->
+                  <a href="generos.html">Indicações de livros</a>
+                  <a href="escritores.html">Hall dos Escritores</a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </th>
+      </table>
+    </header> <!--Fim do header-->
+    
+    <div id="interface">
+      <h1>Participações no projeto</h1>
+      <p>☆José Paulo dos Santos Dias☆</p>
+      <p>◇</p>
+      <p>☆Shirley Matias da Silva☆</p>
+      <p>◇</p>
+      <p>☆Franklin Diego da Silva Tavares☆</p>
+      <p>◇</p>
+      <p>☆Josivaldo Gabriel Azevedo dos Santos☆</p>
+      <p>◇</p>
+      <p>☆Jaciel Jorge da Silva☆</p>
+    </div>
+
+    <div class="footerFixo">
+      <ul>
+        <li><span>© EbookReader 2020</span></li>
+        <li id="email"><span>SAC: SuporteAL@hotmail.com</span></li>
+      </ul>
+    </div>
+  </body>
+</html>
