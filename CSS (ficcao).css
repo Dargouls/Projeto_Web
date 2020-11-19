@@ -72,8 +72,3 @@ td{ /*Cada célula das tabelas*/
 .capaLivro{ /*Cada capa de livro*/
     width: 150px;
 }
-.link{
-    text-align: center;
-    color: khaki;
-    text-decoration: underline solid khaki;
-  }

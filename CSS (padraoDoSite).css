@@ -84,41 +84,51 @@ h1 {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-p, h2 {
+p, h2 { /*Lembrar de mudar o tamanho das fontes de px para em*/
     color: rgb(230, 230, 230);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
-span {
+span { 
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
+.link{ /*Links do site*/ /*Lembrar de remover essa parte do código q está no CSS de outras páginas*/
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    color: khaki;
+    text-decoration: underline solid khaki;
+}
 .footer { /*Footer*/
     background-image: url("Images/Madeira escura.jpg");
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     margin-top: 10%;
     width: 100%;
-    height: 35px;
+    height: 35px; /*Lembrar de mudar para porcentagem*/
     color: white;
-    font-size: 16px;
+    font-size: 16px; /*Lembrar de mudar para em*/
 }
-.footerFixo { /*Footer*/
+.footerFixo { /*Footer fixo na parte baixa da viewport*/
     background-image: url("Images/Madeira escura.jpg");
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     position: fixed;
     bottom: 0%;
     width: 100%;
-    height: 35px;
+    height: 35px; /*Lembrar de mudar para porcentagem*/
     color: white;
-    font-size: 16px;
+    font-size: 16px; /*Lembrar de mudar para em*/
 }
-
-.footer ul, .footerFixo {
+/*Centralização dos footers*/
+.footer ul, .footerFixo ul {
+    width: 100%;
+    height: 100%;
     margin: 0px;
+    display: table;
+    text-align: center;
 }
-
-#email {
-    padding-left: 10%;
+.footer li, .footerFixo li{
+    display: table-cell;
+    vertical-align: middle;
 } /*Fim do padrão do site*/
