@@ -3,83 +3,85 @@
 
 <!doctype html>
 <html lang="pt-br">
-    <head> 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>EbookReader</title>
-        <link rel="stylesheet" href="CSS (padraoDoSite).css">
-        <link rel="stylesheet" href="CSS (leitura).css"/>
-        <link rel="stylesheet" href="Images/ebook.png">
-        <link rel="stylesheet" href="Images/Madeira clara.png">
-        <link rel="stylesheet" href="Images/Madeira escura.jpg">
-        <link rel="stylesheet" href="Images/Seta1.png">
-        <link rel="shortcut icon" href="ebook.ico">
-    </head>
+	<head> 
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>EbookReader</title>
+			<link rel="stylesheet" href="CSS (padraoDoSite).css">
+			<link rel="stylesheet" href="CSS (leitura).css"/>
+			<link rel="stylesheet" href="Images/ebook.png">
+			<link rel="stylesheet" href="Images/Madeira clara.png">
+			<link rel="stylesheet" href="Images/Madeira escura.jpg">
+			<link rel="stylesheet" href="Images/Seta1.png">
+			<link rel="shortcut icon" href="ebook.ico">
+	</head>
 
-    <body>
-      <header> <!--Barra superior-->
-        <table> <!--Lista para organizar o conteúdo-->
-          <th id="imgLogo">
-            <a href="index.html"><img src="Images/ebook.png"></a>
-          </th>
-          <th class="fabiana-font" id="txtLogo">
-            <a href="index.html">Ebook Reader</a>
-          </th>
-          <th>
-            <nav> <!--Botões de navegação-->
-              <ul id="botoesNav";> <!--Lista para organizar os botões-->
-                <li class="navButton"><a href="index.html">Início</a></li>
-                <li class="navButton"><a href="leitura.html">PDF (retirar)</a></li> <!--Esse botão está sendo mostrado apenas a fim de ver todas as páginas do site. Será retirado no momento q houver JS-->
-                <li class="navButton"><a href="sobre.html">Sobre</a></li>
-                <li class="navButton" id="dropdown"> <!--Botão com dropdown-->
-                  <a class="dropbtn">Livros ↓</a> <!--Texto do botão-->
-                  <div class="dropdown-content"> <!--Conteúdo do dropdown-->
-                    <a href="generos.html">Indicações de livros</a>
-                    <a href="escritores.html">Hall dos Escritores</a>
-                  </div>
-                </li>
-              </ul>
-            </nav>
-          </th>
-        </table>
-      </header> <!--Fim do header-->
+	<body>
+		<header> <!--Barra superior-->
+			<table> <!--Lista para organizar o conteúdo-->
+				<th id="imgLogo">
+					<a href="index.html"><img src="Images/ebook.png"></a>
+				</th>
+				<th class="fabiana-font" id="txtLogo">
+					<a href="index.html">Ebook Reader</a>
+				</th>
+				<th>
+					<nav> <!--Botões de navegação-->
+						<ul id="botoesNav";> <!--Lista para organizar os botões-->
+							<li class="navButton"><a href="index.html">Início</a></li>
+							<li class="navButton"><a href="leitura.html">PDF (retirar)</a></li> <!--Esse botão está sendo mostrado apenas a fim de ver todas as páginas do site. Será retirado no momento q houver JS-->
+							<li class="navButton"><a href="sobre.html">Sobre</a></li>
+							<li class="navButton" id="dropdown"> <!--Botão com dropdown-->
+								<a class="dropbtn">Livros ↓</a> <!--Texto do botão-->
+								<div class="dropdown-content"> <!--Conteúdo do dropdown-->
+									<a href="generos.html">Indicações de livros</a>
+									<a href="escritores.html">Hall dos Escritores</a>
+								</div>
+							</li>
+						</ul>
+					</nav>
+				</th>
+			</table>
+		</header> <!--Fim do header-->
 
-      <div class="gerPag"> <!--Div do gerenciador de páginas-->
-        <select class="pagSelect" id="gerPagBot"> <!--Gerenciador de páginas-->
-          <option value="--">Página: --</option> <!--Opções-->
-        </select>
-        <select class="pagSelect" id="gerPagLer">
-          <option value="--">Modo de Visualização</option>
-          <option value="Passar páginas">Passar páginas</option>
-          <option value="Todas as páginas">Todas as páginas</option>
-        </select>
-        </div>
-      </div>
+		<div class="gerPag"> <!--Div do gerenciador de páginas-->
+			<div id="pagina-atual"><p>Página atual: --</p></div>
+			<select class="pagSelect" id="gerPagBot"> <!--Gerenciador de páginas-->
+				<option value="--">Página: --</option> <!--Opções-->
+			</select>
+			<select class="pagSelect" id="gerPagLer">
+				<option value="--">Modo de Visualização</option>
+				<option value="Passar páginas">Passar páginas</option>
+				<option value="Todas as páginas">Todas as páginas</option>
+			</select>
+		</div>
 
-      <div id="paginaBotoes"> <!--Página atual e botões retroceder e avançar de página-->
-        <table>
-          <th>
-            <button class="seta" id="retroceder"><img src="Images/Seta1.png" alt="retroceder"></button>
-          </th>
-          <th>
-            <div class="pagina"></div>
-          </th>
-          <th>
-            <button class="seta" id="proximo"><img src="Images/Seta1.png" alt="avançar"></button>
-          </th>
-        </table>
-      </div>
+		<div id="paginaBotoes"> <!--Página atual e botões retroceder e avançar de página-->
+			<table>
+				<th>
+					<button class="seta" id="retroceder"><img src="Images/Seta1.png" alt="retroceder"></button>
+				</th>
+				<th>
+					<div class="pagina"></div>
+				</th>
+				<th>
+					<button class="seta" id="proximo"><img src="Images/Seta1.png" alt="avançar"></button>
+				</th>
+			</table>
+		</div>
 
-      <div class="gerPagBaixo"> <!--Gerenciador de páginas após ler a página atual-->
-        <button class="pagSelect" id="passarPag">Próxima página</button> <!--Passar página-->
-      </div>
-      
-      <div class="footer"> <!--<div> para fazer o rodapé-->
-        <ul>
-          <li><span>© EbookReader 2020</span></li>
-          <li id="email"><span>SAC: SuporteAL@hotmail.com</span></li>
-        </ul>
-      </div>
+		<div class="gerPagBaixo"> <!--Gerenciador de páginas após ler a página atual-->
+			<button class="pagSelect" id="passarPag">Próxima página</button> <!--Passar página-->
+		</div>
+		
+		<div class="footer"> <!--Footer da página-->
+			<ul>
+				<li><span>© EbookReader 2020</span></li>
+				<li id="email"><span>SAC: SuporteAL@hotmail.com</span></li>
+				<li><a  class="link" target="_blank" href="https://github.com/JosivaldoGabriel/Projeto_Web">
+					Link para o repositório no Github</a></li>
+			</ul>
+		</div>
 
-    </body>
+	</body>
 </html>

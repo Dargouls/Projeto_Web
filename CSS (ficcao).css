@@ -9,12 +9,7 @@ body{
     background-repeat: no-repeat;
 }
 #tituloPagina{
-    font-size: 35px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: #259cd88f;
-    text-align: center;
-    padding: 1%;
-    border: 2px dashed lightslategray;
 }
 
 /*Fundos de cada bloco de informações dos livros*/
@@ -32,43 +27,5 @@ body{
     background-size: cover;
     width: 50%;
     border-radius: 0px 20px 20px 0px;
-    transition: transform 0.3s ease-out;
-}
-.sinopse-2 { /*Escondendo a maior parte da sinopse*/
-    display: none;
-}
-
-.temaFundo:hover {
-    transform: scale(1.1)translateX(4%);
-}
-
-.temaFundo:hover .sinopse-2 {
-    display: block;
-}
-
-.temaFundo:hover .capaLivro { /*Aumentando o tamanho da capa do livro*/
-    width: 225px;
-    transform: translateX(75%);
-}
-
-.capaLivro { /*Cada capa de livro*/
-    width: 150px;
-    transition: width 0.3s ease-out, transform 0.3s ease-out;
-}
-
-.tabLivro{ /*Tabelas de livros*/
-    margin-top: 5%;
-    border-radius: 0px 20px 20px 0px;
     border-bottom: 3px dashed lightblue;
-    padding: 10px 10px 10px 20px;
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
-}
-.tabLivro th{ /*Título do livro*/
-    text-align: left;
-}
-td{ /*Cada célula das tabelas*/
-    border-bottom: 1px groove lightslategray;
-}
-.capaLivro{ /*Cada capa de livro*/
-    width: 150px;
 }

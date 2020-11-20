@@ -1,0 +1,63 @@
+
+/*Padrão das páginas de indicações de livros*/
+
+#tituloPagina{
+    font-size: 2.187em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    padding: 1%;
+    border: 2px dashed #313436;
+}
+@media screen and (min-width: 992px){
+    .temaFundo{
+        width: 50%;
+        margin-top: 5%;
+        transition: transform 0.2s ease-out;
+    }
+    .sinopse-2 { /*Escondendo a maior parte da sinopse*/
+        display: none;
+    }
+    
+    .temaFundo:hover {
+        transform: scale(1.1)translateX(4%);
+    }
+    
+    .temaFundo:hover .sinopse-2 {
+        display: block;
+    }
+    
+    .temaFundo:hover .capaLivro { /*Aumentando o tamanho da capa do livro*/
+        width: 225px;
+        transform: translateX(25%);
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+    .temaFundo{
+        margin-top: 10%;
+        width: 100%;
+    }
+}
+.tabLivro { /*Tabelas de livros*/
+    border-radius: 0px 20px 20px 0px;
+    padding: 10px 10px 10px 20px;
+}
+
+
+.tabLivro th { /*Título do livro*/
+    text-align: left;
+}
+
+td { /*Cada célula das tabelas*/
+    border-bottom: 1px groove lightslategray;
+}
+
+.capaLivro { /*Cada capa de livro*/
+    width: 150px;
+    transition: width 0.2s ease-out, transform 0.2s ease-out;
+}
+
+.link {
+    text-align: center;
+    color: khaki;
+    text-decoration: underline solid khaki;
+}
