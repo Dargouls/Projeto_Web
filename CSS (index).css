@@ -1,20 +1,34 @@
 /*CSS da página inicial*/
 
-
-body{ /*Zerando as margens do body e colocando background*/
-    margin: 0%;
+@media only screen and (max-width: 1600px){
+    body{ /*Zerando as margens do body e colocando background*/
+        margin: 0%;
+        background-size: 100%; /*Há um problema de responsividade na imagem de background q não sabemos resolver ainda*/
+        background-image: url("Images/book-pages\ -\ cortado.jpg");
+        background-position-y: -100%;
+        background-repeat: no-repeat;
+        /*background-color:#e0e0e0;*/
+    }
+}
+@media only screen and (min-width: 1600px){
+    body{
+        margin: 0%;
+        background-size: 100%; /*Há um problema de responsividade na imagem de background q não sabemos resolver ainda*/
+        background-image: url("Images/book-pages.jpg");
+        background-position-y: -8%;
+        background-repeat: no-repeat;
+    }
+}
+#meio{
     background-color: #18191a;
-    background-size: 100%; /*Há um problema de responsividade na imagem de background q não sabemos resolver ainda*/
-    background-image: url("Images/book-pages - cortado.png");
-    background-position-y: 120%; /*posição do plano de fundo em Y*/
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    /*background-color:#e0e0e0;*/
+    height: 225px;
 }
 #interface{ /* div central da página*/
     text-align: center;
     width: 100%;
-    margin-top: 5%;
+    position: absolute;
+    top: 150px;
+    
 }
 #lerPDF{ /*Botão para ler um documento*/
   width: 400px;/*30%;*/

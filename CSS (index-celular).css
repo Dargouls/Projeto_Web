@@ -1,0 +1,27 @@
+
+body{
+    margin: 0%;
+    background-size: cover; /*Há um problema de responsividade na imagem de background q não sabemos resolver ainda*/
+    background-image: url("Images/book-pages.jpg");
+    background-position-y: -8%;
+    background-repeat: no-repeat;
+}
+
+#interface{ /*div central da página*/
+    text-align: center;
+    width: 100%;
+    top: 50%;
+}
+#lerPDF{ /*Botão para ler um documento*/
+  width: 400px;/*30%;*/
+  height: 150px;
+  background-color: rgb(157, 151, 253);
+  box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.30);
+  border-radius: 7px;
+  font-size: 2.187em;
+  line-height: 50px;
+  color: white;
+  text-align: center;
+  border-style: dotted;
+  transition: background-color 0.25s ease-in-out, box-shadow 0.35s ease-out;
+}
