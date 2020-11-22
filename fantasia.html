@@ -20,7 +20,7 @@
 	<body>
 		<header> <!--Barra superior-->
 			<a id="imgLogo" href="index.html"><img src="Images/Logo do site.png" alt=""></a>
-			  <nav> <!--Botões de navegação-->
+			<nav> <!--Botões de navegação-->
 				<ul id="botoesNav";> <!--Lista para organizar os botões-->
 				  <li class="navButton"><a href="index.html">Início</a></li>
 				  <li class="navButton"><a href="leitura.html">PDF (retirar)</a></li> <!--Esse botão está sendo mostrado apenas a fim de ver todas as páginas do site. Será retirado no momento q houver JS-->
@@ -33,13 +33,25 @@
 					</div>
 				  </li>
 				</ul>
-			  </nav>
-		  </header> <!--Fim do header-->
+			</nav>
+		</header> <!--Fim do header-->
 
-		<div id="meio">
-	
-			<h1 id="tituloPagina">Livros de Fantasia</h1> <!--Título da página-->
+		<div class="marcaPagina"> <!--Marca página indicando o conteúdo da página-->
+			<div id="marca-pagina-corpo"> <!--Corpo do marca-página-->
+				<img class="icones" src="Images/Icones/pergaminho.png" alt="">
+				<h1 id="tituloPagina">Fantasia</h1>
+			</div>
+			<div id="marca-pagina-ponta"></div> <!--Ponta triângular do marca página-->
+		</div>
 
+		</div>
+		<div id="conteudo">
+			<!--<div class="marcaPagina">
+				<div class="marcaPagina" id="corpo"><h1 id="tituloPagina">Livros de Fantasia</h1></div>
+				<div class="marcaPagina" id="ponta"></div>
+
+			</div>-->
+				
 				<div class="temaFundo" id="nomeDoVento">
 					<table class="tabLivro" id="livro-nomeDoVento"> <!--Tabela do livro-->
 						<th><img class="capaLivro" src="Images/Capas-Livros/NomeDoVento-livro-fantasia.jpg" alt=""></th> <!--Capa do livro-->

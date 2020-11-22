@@ -9,9 +9,21 @@ body {
     background-size: 100%;
 }
 
-#tituloPagina {
-    background-color: #2f36468e;
+#marca-pagina-corpo{ /*Corpo do marca página*/
+    background-color: darkred;
 }
+@media screen and (min-width: 992px){
+    #marca-pagina-ponta{ /*Ponta triângular do marca página*/
+        border-top: 50px solid darkred;
+    }
+}
+@media screen and (max-width: 992px){
+    #marca-pagina-ponta{ /*Ponta triângular do marca página*/
+        border-top: 50px solid transparent;
+        border-left: 50px solid darkred;
+    }
+}
+
 
 /*Fundos de cada bloco de informações dos livros*/
 #oCemiterio{

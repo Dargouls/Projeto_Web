@@ -8,8 +8,19 @@ body{
     background-repeat: no-repeat;
     background-size: 100%;
 }
-#tituloPagina{
-    background-color: #0ab10180;
+#marca-pagina-corpo{ /*Corpo do marca página*/
+    background-color: #faba17;
+}
+@media screen and (min-width: 992px){
+    #marca-pagina-ponta{ /*Ponta triângular do marca página*/
+        border-top: 50px solid #faba17;
+    }
+}
+@media screen and (max-width: 992px){
+    #marca-pagina-ponta{ /*Ponta triângular do marca página*/
+        border-top: 50px solid transparent;
+        border-left: 50px solid #faba17;
+    }
 }
 
 /*Fundos de cada bloco de informações dos livros*/
@@ -25,7 +36,7 @@ body{
 .temaFundo { /*Div de cada livro*/
     background-repeat: no-repeat;
     background-size: cover;
-    width: 50%;
     border-radius: 0px 20px 20px 0px;
     border-bottom: 3px dashed green;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
 }

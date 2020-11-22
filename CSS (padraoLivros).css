@@ -4,11 +4,13 @@
 #tituloPagina{
     font-size: 2.187em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: center;
-    padding: 1%;
-    border: 2px dashed #313436;
 }
-@media screen and (min-width: 992px){
+
+.icones{ /*Ícones dos marca página*/
+    width: 80px;
+    height: 80px;
+}
+@media screen and (min-width: 992px){ /*Para monitores de computador ou notebook*/
     .temaFundo{
         width: 50%;
         margin-top: 5%;
@@ -27,14 +29,68 @@
     }
     
     .temaFundo:hover .capaLivro { /*Aumentando o tamanho da capa do livro*/
-        width: 225px;
+        width: 200px;
         transform: translateX(25%);
     }
+    #tituloPagina{
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+        width: 100%;
+    }
+    .marcaPagina{
+        /*display: flex;
+        margin-top: 3%;*/
+        float: right;
+        margin-right: 13%;
+        
+    }
+    #marca-pagina-corpo{
+        width: 100px;
+        height: 5px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        text-align: center;
+        overflow: hidden;
+        box-shadow: 0px 5px 2px 5px rgba(0, 0, 0, 0.4);
+        transition: height 0.3s ease-out;
+    }
+    body:hover #marca-pagina-corpo{
+        height: 470px;
+    }
+    #marca-pagina-ponta{
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-radius: 5px;
+        margin-top: -6px;
+    }
 }
-@media screen and (min-width: 768px) and (max-width: 992px){
+@media screen and (max-width: 992px){ /*Para telas do tamanho de tablets e celulares*/
     .temaFundo{
         margin-top: 10%;
         width: 100%;
+    }
+    .marcaPagina{
+        display: flex;
+        margin-top: 3%;
+    }
+    #marca-pagina-corpo{
+        display: flex;
+        width: 60%;
+        overflow: hidden; /*Para o conteúdo do div n extrapolar o div*/
+        width: 70%;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        box-shadow: -7px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    }
+    #marca-pagina-ponta{
+        width: 0;
+        height: 0;
+        border-top: 50px solid transparent;
+        border-bottom: 50px solid transparent;
+        border-left: 50px solid cornflowerblue;
+        margin-left: -6px;
     }
 }
 .tabLivro { /*Tabelas de livros*/
