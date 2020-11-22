@@ -6,12 +6,22 @@ body{
   background-color: #18191a;
 }
 .tabGenero{
-  width: 50%;
-  margin-top: 5%;
   background-color: #313436; /*Eu posso colocar uma outra capa do msm livro com blur no fundo*/
   border-radius: 0px 20px 20px 0px;
   padding: 10px 10px 10px 10px;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+}
+@media screen and (min-width: 992px){
+  .tabGenero{
+    width: 50%;
+    margin-top: 5%;
+  }
+}
+@media screen and (max-width: 992px){
+  .tabGenero{
+    width: 100%;
+    margin-top: 10%;
+  }
 }
 .tabGenero li{
   list-style: square;
@@ -24,8 +34,8 @@ th{
 td{ /*Cada célula das tabelas*/
   border-bottom: 1px groove lightslategray;
 }
-.capaLivro{
-  width: 600px;
+.capaLivro{ /*A capa de fundo de cada tema ocupará o máximo possível dentro da sua célula na tabela*/
+  width: 100%;
 }
 
 h1 { 
