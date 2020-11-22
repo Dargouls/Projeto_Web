@@ -3,7 +3,7 @@
 @media only screen and (max-width: 1700px){
     body{ /*Zerando as margens do body e colocando background*/
         margin: 0%;
-        background-size: 100%; /*Há um problema de responsividade na imagem de background q não sabemos resolver ainda*/
+        background-size: cover;
         background-image: url("Images/book-pages\ -\ cortado.jpg");
         background-position-y: -90%;
         background-repeat: no-repeat;
@@ -14,7 +14,7 @@
 @media only screen and (min-width: 1700px){
     body{
         margin: 0%;
-        background-size: 100%; /*Há um problema de responsividade na imagem de background q não sabemos resolver ainda*/
+        background-size: cover;
         background-image: url("Images/book-pages.jpg");
         background-position-y: -8%;
         background-repeat: no-repeat;

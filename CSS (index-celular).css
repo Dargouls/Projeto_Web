@@ -1,10 +1,11 @@
 
 body{
     margin: 0%;
-    background-size: cover; /*Há um problema de responsividade na imagem de background q não sabemos resolver ainda*/
+    background-size: cover;
     background-image: url("Images/book-pages.jpg");
     background-position-y: -8%;
     background-repeat: no-repeat;
+    background-color: #18191a;
 }
 
 #interface{ /*div central da página*/
@@ -13,7 +14,7 @@ body{
     top: 50%;
 }
 #lerPDF{ /*Botão para ler um documento*/
-  width: 400px;/*30%;*/
+  width: 30%;
   height: 150px;
   background-color: rgb(157, 151, 253);
   box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.30);
