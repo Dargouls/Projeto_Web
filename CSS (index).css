@@ -1,5 +1,8 @@
 /*CSS da página inicial*/
 
+body{
+    background-color: #18191a;
+}
 @media only screen and (max-width: 1700px){
     body{ /*Zerando as margens do body e colocando background*/
         margin: 0%;
@@ -7,7 +10,6 @@
         background-image: url("Images/book-pages\ -\ cortado.jpg");
         background-position-y: -90%;
         background-repeat: no-repeat;
-        background-color: #18191a;
         /*background-color:#e0e0e0;*/
     }
 }
