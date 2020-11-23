@@ -1,16 +1,15 @@
 
 body{
     margin: 0%;
-    background-size: cover;
+    /*background-size: cover;
     background-image: url("Images/book-pages.jpg");
     background-position-y: -8%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
     background-color: #18191a;
 }
 #interface{ /*div central da página*/
     text-align: center;
     width: 100%;
-    position: absolute;
     top: 150px;
 }
 #lerPDF{ /*Botão para ler um documento*/
