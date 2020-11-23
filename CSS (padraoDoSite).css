@@ -23,6 +23,7 @@ header {
     display: flex;
     height: 100px;
 }
+/*Para monitores desktop e telas de tamanho semelhante*/
 @media screen and (min-width: 992px){
     header nav { /*definindo tamanho da tabela da barra superior*/
         width: 100%;
@@ -30,23 +31,27 @@ header {
     nav{
         text-align: center;
     }
-    .dropdown-content{
+    .dropdown-content{ /*Para o dropdown n influenciar na posição dos outros botões do nav*/
         position: absolute;
     }
-    #hamburguer-button{
+    #dropdown-mobile{ /*Escondendo o nav q vai aparecer somente em dispositivos menores*/
         display: none;
     }
 }
+/*Para dispositivos menores no modo retrato*/
 @media screen and (max-width: 992px){
-    header nav {
+    header nav { /*O nav irá ocupar todo a largura possível, ou seja, da imagem da logo até o final*/
         width: 100%;
     }
     nav{
         text-align: right;
     }
     
-    #botoes-nav{
+    #botoes-nav{ /*Escondendo os botões de navegação quando estiver em telas menores*/
         display: none;
+    }
+    #dropdown-mobile { /*Como o div do dropdown será mostrado*/
+        display: inline-block;
     }
     #hamburguer-button{
         display: inline;
@@ -103,7 +108,7 @@ header a { /*Tirando decorações dos links*/
 .dropdown-content a:hover { /*Evento ao passar o evento*/
     background-color: #3f3f3f;
 }
-#dropdown:hover .dropdown-content { /*Ativando o dropdown*/
+#dropdown:hover .dropdown-content, #dropdown-mobile:hover .dropdown-content { /*Ativando o dropdown*/
     display: block;
 }
 
