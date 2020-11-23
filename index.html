@@ -8,8 +8,8 @@
     <title>EbookReader</title>
     <link rel="stylesheet" href="CSS (padraoDoSite).css">
     <link rel="stylesheet" href="CSS (index).css" media="screen and (min-width: 992px)">
-    <link rel="stylesheet" href="CSS (index).css" media="screen and (max-width: 992px) and (orientation: landscape)">
-    <link rel="stylesheet" href="CSS (index-celular).css" media="screen and (max-width: 992px) and (orientation: portrait)">
+    <!--<link rel="stylesheet" href="CSS (index).css" media="screen and (max-width: 992px) and (orientation: landscape)">-->
+    <link rel="stylesheet" href="CSS (index-celular).css" media="screen and (max-width: 992px)"> <!--and (orientation: portrait)-->
     <link rel="stylesheet" href="Images/ebook.png">
     <link rel="stylesheet" href="Images/Logo do site.png">
     <link rel="stylesheet" href="Images/Madeira clara.png">
@@ -22,7 +22,19 @@
     <header> <!--Barra superior-->
       <a id="imgLogo" href="index.html"><img src="Images/Logo do site.png" alt=""></a>
         <nav> <!--Botões de navegação-->
-          <ul id="botoesNav";> <!--Lista para organizar os botões-->
+          <!--Celulares em modo retrato-->
+          <div id="dropdown"> <!--Botão com dropdown-->
+            <button type="submit" class="dropbtn" id="hamburguer-button"></button>
+            <div class="dropdown-content"> <!--Conteúdo do dropdown-->
+              <a href="index.html">Início</a>
+              <a href="leitura.html">PDF (retirar)</a>
+              <a href="sobre.html">Sobre</a>
+              <a href="generos.html">Indicações de Livros</a>
+              <a href="escritores.html">Hall dos escritores</a>
+            </div>
+          </div>
+          <!--Monitores-->
+          <ul id="botoes-nav";> <!--Lista para organizar os botões-->
             <li class="navButton"><a href="index.html">Início</a></li>
             <li class="navButton"><a href="leitura.html">PDF (retirar)</a></li> <!--Esse botão está sendo mostrado apenas a fim de ver todas as páginas do site. Será retirado no momento q houver JS-->
             <li class="navButton"><a href="sobre.html">Sobre</a></li>
