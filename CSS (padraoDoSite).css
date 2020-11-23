@@ -7,17 +7,13 @@ header {
     box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.5);
 }
 
-header img { /*Imagem dentro da tabela da barra de navegação*/
+header img { /*Imagem dentro da barra de navegação*/
     margin-left: 10px;
     width: 15em;
 }
 
-#imgLogo { /*Logo do site dentro da tabela*/
+#imgLogo { /*Logo do site*/
     text-align: right;
-}
-
-#txtLogo { /*Texto nome do site dentro da tabela*/
-    text-align: left;
 }
 header {
     display: flex;
@@ -52,19 +48,20 @@ header {
     }
     #dropdown-mobile { /*Como o div do dropdown será mostrado*/
         display: inline-block;
+        width: 50px;
+        transition: width 0.3s ease-in-out;
     }
     #hamburguer-button{
         display: inline;
         height: 50px;
-        width: 50px;
+        width: 100%;
         margin-top: 20px;
         border-style: none;
         background-color: rgba(255, 255, 255, 0);
-        background-image: url("Images/hamburger\ button.png");
-        background-size: contain;
     }
     .dropdown-content { /*Conteúdo do botão dropdown*/
-        margin-top: 40px;
+        margin-top: 20px;
+        width: 100%;
         position: relative;
         text-align: center;
     }
@@ -111,7 +108,19 @@ header a { /*Tirando decorações dos links*/
 #dropdown:hover .dropdown-content, #dropdown-mobile:hover .dropdown-content { /*Ativando o dropdown*/
     display: block;
 }
-
+.bar1, .bar2, .bar3 {
+    width: 100%;
+    height: 7px;
+    border-radius: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+#dropdown-mobile:hover{
+    width: 100%;
+}
+#dropdown-mobile:hover header img{
+    display: none;
+}
 
 /*Fontes no geral*/
 @font-face {
