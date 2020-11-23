@@ -52,6 +52,11 @@ header {
         display: inline;
         height: 50px;
         width: 50px;
+        margin-top: 20px;
+        border-style: none;
+        background-color: rgba(255, 255, 255, 0);
+        background-image: url("Images/hamburger\ button.png");
+        background-size: contain;
     }
     .dropdown-content { /*Conteúdo do botão dropdown*/
         margin-top: 40px;
@@ -162,6 +167,7 @@ span {
     height: 100%;
     display: table;
     text-align: center;
+    font-size: 1em;
 }
 .footer li, .footerFixo li{
     display: table-cell;
