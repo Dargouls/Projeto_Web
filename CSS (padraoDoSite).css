@@ -7,12 +7,9 @@ header {
     box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.5);
 }
 
-header img { /*Imagem dentro da barra de navegação*/
+#imgLogo { /*Imagem dentro da barra de navegação*/
     margin-left: 10px;
     width: 15em;
-}
-
-#imgLogo { /*Logo do site*/
     text-align: right;
 }
 header {
@@ -64,6 +61,14 @@ header {
         width: 100%;
         position: relative;
         text-align: center;
+    }
+}
+@media screen and (max-width: 768px){
+    #imgLogo { /*Imagem dentro da barra de navegação*/
+        margin-left: 10px;
+        margin-top: 10px;
+        width: 10em;
+        text-align: right;
     }
 }
 
