@@ -9,7 +9,7 @@ header {
     height: 100px;
 }
 
-header img { /*Imagem dentro da barra de navegação*/
+#img-logo { /*Imagem dentro da barra de navegação*/
     margin-left: 10px;
     width: 15em;
     text-align: right;
@@ -65,7 +65,7 @@ header img { /*Imagem dentro da barra de navegação*/
     header {
         height: 85px;
     }
-    #imgLogo { /*Imagem dentro da barra de navegação*/
+    #img-logo { /*Imagem dentro da barra de navegação*/
         margin-left: 10px;
         margin-top: 10px;
         width: 10em;
