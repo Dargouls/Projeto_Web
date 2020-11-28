@@ -1,0 +1,79 @@
+
+/*Página de cadastro de novo usuário*/
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #18191a;
+    background-image: url("Images/papel-de-parede-abstrato.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+form{
+    margin: auto; /*Centralizar*/
+    margin-top: 5%;
+    padding: 20px;
+    width: 32%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 50px 2px rgba(0, 0, 0, 0.4);
+    background-color: rgb(252, 252, 252);
+    text-align: center;
+    transition: transform 0.4s ease-in-out;
+
+}
+form:focus-within{
+    transform: scale(1.05);
+}
+#area-text{
+    text-align: right;
+}
+label{
+    color: black;
+    font-size: 1.1em;
+}
+.radiobox label{
+    width: auto;
+    display: inline-block;
+}
+.inputTexto{
+    width: 60%;
+    padding: 10px;
+    height: 20px;
+    line-height: 30px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+.inputTexto:focus{
+    outline: none;
+    border-color: #ddbf6b;
+    transition: all 0.2s ease-in-out;
+}
+
+input[type=submit]{
+    display: block;
+    background-color: rgb(252, 252, 252);
+    padding: 25px;
+    width: 100%;
+    border: none;
+    outline: 0;
+    margin: 0 auto;
+    font-size: 1.1em;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid slateblue;
+    transition: all .15s ease-in-out
+}
+input[type=submit]:hover{
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: rgb(131, 123, 243);
+}
+.link-login{
+    color: #999999;
+}
+.separador{
+    display: inline-block;
+    height: 2px;
+    width: 40%;
+    border-bottom: 2px solid rgb(105, 105, 226);
+}

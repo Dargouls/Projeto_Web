@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EbookReader</title>
+    <link rel="stylesheet" href="CSS (padraoDoSite).css">
+    <link rel="stylesheet" href="CSS (cadastro).css">
+    <link rel="stylesheet" href="Images/ebook.png">
+    <link rel="stylesheet" href="Images/Logo do site.png">
+    <link rel="stylesheet" href="Images/Madeira clara.png">
+    <link rel="stylesheet" href="Images/Madeira escura.jpg">
+    <link rel="stylesheet" href="Images/book-pages - cortado.png">
+    <link rel="shortcut icon" href="ebook.ico">
+    <link rel="stylesheet" href="Images/fundo-página-cadstro.png">
+  </head>
+
+  <body>
+    <header> <!--Barra superior-->
+      <a id="link-logo" href="index.html"><img id="img-logo" src="Images/Logo do site.png" alt=""></a>
+        <nav> <!--Botões de navegação-->
+          <!--Celulares em modo retrato-->
+          <div id="dropdown-mobile"> <!--Botão com dropdown-->
+            <button type="submit" class="dropbtn" id="hamburguer-button"> <!--Botão feito sem imagem, apenas CSS-->
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </button>
+            <div class="dropdown-content"> <!--Conteúdo do dropdown-->
+              <a href="index.html">Início</a>
+              <a href="leitura.html">PDF (retirar)</a>
+              <a href="sobre.html">Sobre</a>
+              <a href="generos.html">Indicações de Livros</a>
+              <a href="escritores.html">Hall dos escritores</a>
+            </div>
+          </div>
+          <!--Monitores desktop-->
+          <ul id="botoes-nav";> <!--Lista para organizar os botões-->
+            <li class="navButton"><a href="index.html">Início</a></li>
+            <li class="navButton"><a href="leitura.html">PDF (retirar)</a></li> <!--Esse botão está sendo mostrado apenas a fim de ver todas as páginas do site. Será retirado no momento q houver JS-->
+            <li class="navButton"><a href="sobre.html">Sobre</a></li>
+            <li class="navButton" id="dropdown"> <!--Botão com dropdown-->
+              <a class="dropbtn">Livros ↓</a> <!--Texto do botão-->
+              <div class="dropdown-content"> <!--Conteúdo do dropdown-->
+                <a href="generos.html">Indicações de livros</a>
+                <a href="escritores.html">Hall dos Escritores</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <!--Colocar dentro de alguma tag de bloco, como div-->
+        <a class="botoesLogin" id="login"><span>Login</span></a>
+        <a class="botoesLogin" id="cadastro" href="cadastro.html#formulario-cadastro"><span>Cadastrar</span></a>
+    </header> <!--Fim do header-->
+
+    <form method="POST" id="formulario-cadastro">
+      <div id="area-text">
+        <p><label for="nome">Nome de usuário: </label>
+          <input class="inputTexto" type="text" name="nome" id="nome" placeholder="Entre 4 e 12 dígitos"></p>
+  
+        <p><label for="nome">E-mail: </label>
+          <input class="inputTexto" type="email" name="e-mail" placeholder="E-mail"></p>
+  
+        <p><label for="nome">Senha: </label>
+          <input class="inputTexto" type="password" name="senha" placeholder="Entre 6 e 12 dígitos:"></p>
+      </div>
+      
+      
+      <p><label for="sexo">Sexo:</label>
+      <select id="sexo" name="sexo">
+        <option value="valor1"><p>--</p></option>
+        <option value="valor2"><p>Masculino</p></option>
+        <option value="valor3"><p>Feminino</p></option>
+        <option value="valor4">Outro</option>
+      </select></p>
+
+      <fieldset class="field radiobox">
+        <legend><span>Deseja receber nossas novidades?</span></legend>
+        <label for="opcao-sim"><p>Sim</p></label>
+        <input type="radio" name="novidades" id="opcao-sim" checked>
+        <label for="opcao-nao"><p>Não</p></label>
+        <input type="radio" name="novidades" id="opcao-nao">
+      </fieldset>
+
+      <p><input type="submit" value="Criar conta"></p>
+      <div class="separador"></div>
+      <div class="separador"></div>
+      <p class="link-login">Já tem uma conta? <a href="" class="link-login">Faça login</a></p>
+    </form>
+
+    <div class="footer"> <!--Footer da página-->
+			<ul>
+				<li><span>© EbookReader 2020</span></li>
+				<li id="email"><span>SAC: SuporteAL@hotmail.com</span></li>
+				<li><a  class="link" target="_blank" href="https://github.com/JosivaldoGabriel/Projeto_Web">
+					Link para o repositório no Github</a></li>
+			</ul>
+		</div>
+  </body>
+
+</html>
