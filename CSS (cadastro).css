@@ -21,6 +21,11 @@ form{
     transition: transform 0.4s ease-in-out;
 
 }
+@media screen and (max-width: 992px){
+    form{
+        width: 90%;
+    }
+}
 form:focus-within{
     transform: scale(1.05);
 }
@@ -48,8 +53,10 @@ label{
     border-color: #ddbf6b;
     transition: all 0.2s ease-in-out;
 }
-
-input[type=submit]{
+.fieldRadiobox{
+    border: 2px solid slateblue;
+}
+input[type=submit]{ /*Botão de criar conta*/
     display: block;
     background-color: rgb(252, 252, 252);
     padding: 25px;
@@ -65,10 +72,10 @@ input[type=submit]{
 }
 input[type=submit]:hover{
     cursor: pointer;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     background-color: rgb(131, 123, 243);
 }
-.link-login{
+.link-login{ /*Link para caso o usuário já tenha uma conta*/
     color: #999999;
 }
 .separador{

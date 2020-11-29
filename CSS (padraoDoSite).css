@@ -31,7 +31,7 @@ header {
     }
     
     .botoesLogin{
-        white-space: nowrap;
+        white-space: nowrap; /*Para a linha não quebrar com o espaço*/
         box-sizing: border-box;
         text-align: center;
         padding: 5px  30px;
@@ -75,6 +75,7 @@ header {
     }
     #dropdown-mobile { /*Como o div do dropdown será mostrado*/
         display: inline-block;
+        white-space: nowrap; /*Para a linha não quebrar com o espaço*/
         width: 50px;
         transition: width 0.3s ease-in-out;
     }
