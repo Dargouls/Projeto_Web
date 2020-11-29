@@ -23,7 +23,7 @@ form{
 }
 @media screen and (max-width: 992px){
     form{
-        width: 90%;
+        width: 80%;
     }
 }
 form:focus-within{
