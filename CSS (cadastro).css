@@ -36,6 +36,11 @@ label{
     color: black;
     font-size: 1.1em;
 }
+@media screen and (max-width: 992px){
+    label{
+        font-size: 1em;
+    }
+}
 .radiobox label{
     width: auto;
     display: inline-block;
