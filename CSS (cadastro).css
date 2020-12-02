@@ -25,28 +25,37 @@ form{
     form{
         width: 80%;
     }
+    label{
+        display: none;
+        font-size: 1em;
+    }
+    #area-text{
+        text-align: center;
+    }
+    .inputTexto{
+        width: 90%;
+    }
+}
+@media screen and (min-width: 992px){
+    #area-text{
+        text-align: right;
+    }
+    .inputTexto{
+        width: 60%;
+    }
 }
 form:focus-within{
     transform: scale(1.05);
 }
-#area-text{
-    text-align: right;
-}
 label{
     color: black;
     font-size: 1.1em;
-}
-@media screen and (max-width: 992px){
-    label{
-        font-size: 1em;
-    }
 }
 .radiobox label{
     width: auto;
     display: inline-block;
 }
 .inputTexto{
-    width: 60%;
     padding: 10px;
     height: 20px;
     line-height: 30px;
