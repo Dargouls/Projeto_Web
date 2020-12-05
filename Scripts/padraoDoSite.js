@@ -1,9 +1,14 @@
 
 var logoSite = document.querySelector("#img-logo");
 var dropdownAtivo = false;
+var tituloPagina = document.querySelector("title").innerText;
 
-
-document.querySelector("title").innerText += " - EbookReader";
+if (tituloPagina == "EbookReader") {
+	console.log("Lorem ipsum");
+} else {
+	document.querySelector("title").innerText += " - EbookReader";
+}
+ 
 function dropbtn(){
 	var button = document.querySelector("#hamburguer-button");
 	var content = document.querySelector(".dropdownContent");
