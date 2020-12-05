@@ -1,7 +1,4 @@
 
-var logoSite = document.querySelector("#img-logo");
-var dropdownAtivo = false;
-
 placeholders();
 
 function validar(){
@@ -25,43 +22,13 @@ function validar(){
 function placeholders (){ //Mudar o conteúdo dos placeholders no HTML para dispositivos menores
 	var larguraTela = screen.width;
 	if (larguraTela <= "992"){
-		var placeholderNome = document.querySelector("nome");
+		var placeholderNome = document.querySelector("input-nome");
 		placeholderNome.placeholder = "Nome de usuário (4-12 caracteres)";
 
-		var placeholderEmail = document.querySelector("email");
+		var placeholderEmail = document.querySelector("input-email");
 		placeholderEmail.placeholder = "E-mail";
 
-		var placeholderSenha = document.querySelector("senha");
+		var placeholderSenha = document.querySelector("input-senha");
 		placeholderSenha.placeholder = "Senha (6-12 caracteres)";
 	}
-}
-
-function dropbtn(){
-	var button = document.querySelector("#hamburguer-button");
-	var content = document.querySelector(".dropdownContent");
-	var dropdown = document.querySelector("#dropdown-mobile");
-	if (dropdownAtivo){
-		dropdownAtivo = false;
-		dropdown.style.width = "50px";
-		content.style.display = "none";
-		logoSite.style.display = "block";
-		logoSite.style.opacity = "1";
-	} else{
-		dropdownAtivo = true;
-		dropdown.style.width = "100%";
-		content.style.display = "block";
-		logoSite.style.opacity = "0";
-		setTimeout(logoDisplay, 170);
-	}
-	
-	button.addEventListener("blur", function() {
-		dropdown.style.width = "50px";
-		content.style.display = "none";
-		logoSite.style.display = "block";
-		logoSite.style.opacity = "1";
-	});
-	
-}
-function logoDisplay(){
-	logoSite.style.display = "none";
 }

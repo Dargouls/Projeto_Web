@@ -16,7 +16,7 @@ header {
     margin-left: 10px;
     width: 15em;
     text-align: right;
-    transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.1s ease-in-out;
 }
 /*Para monitores desktop e telas de tamanho semelhante*/
 @media screen and (min-width: 992px){
