@@ -21,18 +21,18 @@ form{
     transition: transform 0.4s ease-in-out;
 
 }
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px){ /*Para celulares e tablets*/
     form{
         width: 80%;
     }
-    label{
+    label[for="input-nome"], label[for="input-email"], label[for="input-senha"]{ /*Deixando algumas labels invisíveis*/
         display: none;
         font-size: 1em;
     }
     #area-text{
         text-align: center;
     }
-    .inputTexto{
+    .inputTexto{ /*inputs de digitar aumentam de tamanho*/
         width: 90%;
     }
 }

@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="Images/Madeira escura.jpg">
     <link rel="stylesheet" href="Images/book-pages - cortado.png">
     <link rel="shortcut icon" href="ebook.ico">
-    <link rel="stylesheet" href="Images/fundo-página-cadstro.png">
   </head>
 
   <body>
@@ -22,7 +21,7 @@
         <nav id="navegacao-site"> <!--Botões de navegação-->
           <!--Celulares em modo retrato-->
           <div id="dropdown-mobile"> <!--Botão com dropdown-->
-            <button type="submit" class="dropbtn" id="hamburguer-button"> <!--Botão feito sem imagem, apenas CSS-->
+            <button type="button" onclick="dropbtn()" class="dropbtn" id="hamburguer-button"> <!--Botão feito sem imagem, apenas CSS-->
               <div class="bar1"></div>
               <div class="bar2"></div>
               <div class="bar3"></div>
@@ -63,25 +62,25 @@
         </nav>
     </header> <!--Fim do header-->
 
-    <form method="POST" id="formulario-cadastro">
+    <form method="POST" id="formulario-cadastro" name="formulario">
       <div id="area-text">
-        <p><label for="nome">Nome de usuário: </label>
-          <input class="inputTexto" type="text" name="nome" id="input-nome" placeholder="Entre 4 e 12 dígitos"></p>
+        <p><label for="input-nome">Nome de usuário: </label>
+          <input class="inputTexto" type="text" id="input-nome" name="input-nome" minlength="4" maxlength="12" placeholder="Entre 4 e 12 dígitos"></p>
   
-        <p><label for="email">E-mail: </label>
-          <input class="inputTexto" type="email" name="email" id="input-email" placeholder="E-mail"></p>
+        <p><label for="input-email">E-mail: </label>
+          <input class="inputTexto" type="email"  id="input-email" placeholder="E-mail"></p>
   
-        <p><label for="senha">Senha: </label>
-          <input class="inputTexto" type="password" name="senha" id="input-senha" placeholder="Entre 6 e 12 dígitos:"></p>
+        <p><label for="input-senha">Senha: </label>
+          <input class="inputTexto" type="password" id="input-senha" min="6" maxlength="12" placeholder="Entre 6 e 12 dígitos:"></p>
       </div>
       
       
-      <p><label for="sexo">Sexo:</label>
-      <select id="sexo" name="sexo">
-        <option value="valor1"><p>--</p></option>
-        <option value="valor2"><p>Masculino</p></option>
-        <option value="valor3"><p>Feminino</p></option>
-        <option value="valor4">Outro</option>
+      <p><label for="input-sexo">Sexo:</label>
+      <select id="input-sexo" name="sexo">
+        <option value="valor-padrao"><p>--</p></option>
+        <option value="valor-masculino"><p>Masculino</p></option>
+        <option value="valor-feminino"><p>Feminino</p></option>
+        <option value="valor-outro">Outro</option>
       </select></p>
 
       <fieldset class="fieldRadiobox">
@@ -92,7 +91,8 @@
         <input type="radio" name="novidades" id="opcao-nao">
       </fieldset>
 
-      <p><input type="submit" value="Criar conta"></p>
+      <p><input type="submit" value="Criar conta" onclick="validar()"></p>
+      <p id="erro-preencher"></p>
       <div class="separador"></div>
       <div class="separador"></div>
       <p class="link-login">Já tem uma conta? <a href="entrar.html#formulario-entrar" class="link-login">Faça login</a></p>

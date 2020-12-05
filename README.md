@@ -5,14 +5,13 @@ Link do projeto no github: https://github.com/JosivaldoGabriel/Projeto_Web
 
 Link do projeto no git pages: https://josivaldogabriel.github.io/Projeto_Web/
 
-Entrega 5:
+Entrega 6:
 
-2.1) O formulário foi adicionado (na página "cadastro.html") como uma forma do usuário criar uma conta no site para aproveitar recursos extras, como fazer upload de livros para ler em qualquer plataforma sem precisar ter o PDF baixado.
+2.1) O formulário com a validação pode ser encontrado na página "cadastro.html".
 
-Elementos usados no form:
-1- label; 2- input type="text"; 3- input type="email"; 4- type="password"; 5- select; 6- input type="submit"; 7- input type="radio".
+2.2) Os placeholders dos input "input-senha" e "input-nome" mudam o conteúdo em dispositivos móveis e as labels somem para aproveitar mais a tela; Também há um botão de dropdown em todas as páginas para dispositivos móveis.
 
-2.2) As páginas "index.html", "terror.html" e "cadastro.html" utilizam Media Queries para telas menores. Outras páginas também utilizam do recurso.
+Ambas as mudanças visuais foram feitas utilizando javascript 
 
 3.3) Integrantes da equipe: Josivaldo Gabriel Azevedo dos Santos; José Paulo dos Santos Dias; Shirley Matias da Silva; Jaciel Jorge da Silva; Franklin Diego da Silva Tavares.
 
