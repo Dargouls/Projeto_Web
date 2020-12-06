@@ -76,9 +76,6 @@ header {
     }
     #dropdown-mobile { /*Como o div do dropdown será mostrado*/
         display: inline-block;
-        white-space: nowrap; /*Para a linha não quebrar com o espaço*/
-        width: 50px;
-        transition: width 0.3s ease-in-out;
     }
     #hamburguer-button{
         display: inline;
@@ -121,8 +118,6 @@ header {
     }
     #dropdown-mobile { /*Como o div do dropdown será mostrado*/
         display: inline-block;
-        width: 50px;
-        transition: width 0.3s ease-in-out;
     }
     #hamburguer-button{
         display: inline;
@@ -163,6 +158,11 @@ header a { /*Tirando decorações dos links*/
 /*Botão dropdown*/
 #dropdown {
     display: inline-block;
+}
+#dropdown-mobile { /*Como o div do dropdown será mostrado*/
+    white-space: nowrap; /*Para a linha não quebrar com o espaço*/
+    width: 50px;
+    transition: width 0.3s ease-in-out;
 }
 .dropdownContent { /*Conteúdo do botão dropdown*/
     display: none;
