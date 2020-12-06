@@ -11,9 +11,9 @@ Entrega 6:
 
 2.2) Os placeholders dos input "input-senha" e "input-nome" mudam o conteúdo em dispositivos móveis e as labels somem para aproveitar mais a tela; Também há um botão de dropdown em todas as páginas para dispositivos móveis.
 
-Ambas as mudanças visuais foram feitas utilizando javascript 
+Ambas as "animações" foram feitas utilizando javascript 
 
 3.3) Integrantes da equipe: Josivaldo Gabriel Azevedo dos Santos; José Paulo dos Santos Dias; Shirley Matias da Silva; Jaciel Jorge da Silva; Franklin Diego da Silva Tavares.
 
 
-Navegadores testados: Opera desktop e Opera touch (mobile).
+Navegadores testados: Opera desktop, Chrome (mobile) e Opera touch (mobile).
