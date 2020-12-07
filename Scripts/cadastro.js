@@ -6,18 +6,25 @@ var senhaForm = document.getElementById("input-senha");
 placeholders();
 
 function validar(){
-    
 	var sexoForm = document.getElementById("input-sexo");
 	var erro = document.getElementById("erro-preencher");
 
     if(nomeForm.value == "" || emailForm.value == "" || senhaForm.value == "" || sexoForm.value == "valor-padrao"){
 		event.preventDefault();
+		let camposVazios = [nomeForm, emailForm, senhaForm];
+		for (i=0; i < camposVazios.length; i++){
+			if (camposVazios[i].value == "") {
+				camposVazios[i].style.borderColor = "#ff7777"
+			} else {
+				camposVazios[i].style.borderColor = "#7eceef";
+			}
+		}
 		erro.innerHTML = "Preencha todos os campos";
-		erro.style.color = "black";
-		erro.style.backgroundColor = "#ff2f2f";
-		erro.style.borderRadius = "2px";
+		erro.style = 'color: black; background-color: #ff2f2f; border-radius: 2px';
         nomeForm.focus();
-    } 
+    } else {
+		alert("Conta criada com sucesso!")
+	}
     
 } 
 
