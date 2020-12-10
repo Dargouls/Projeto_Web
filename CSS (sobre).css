@@ -5,6 +5,19 @@ body{
     margin: 0%;
     background-color:#18191a;
 }
+#interface{
+    text-align: center;
+    margin: 12%;
+    margin-top: 5%;
+    padding: 2%;
+    background-color: #313436;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+}
+#tabReferencias{
+    width: 70%;
+}
+/*
 @media screen and (min-width: 992px){
     #interface{
         text-align: center;
@@ -19,7 +32,9 @@ body{
         width: 70%;
     }
 }
-@media screen and (max-width: 992px){ /*Pequenas adaptações da página para telas menores*/
+*/
+/*
+@media screen and (max-width: 992px){ /*Pequenas adaptações da página para telas menores*
     #interface{
         text-align: center;
         margin: 5%;
@@ -35,7 +50,7 @@ body{
         width: 90%;
     }
 }
-
+*/
 /*Tabela com 
 2.4.1) título da tabela
 2.4.2) cabeçalho das colunas

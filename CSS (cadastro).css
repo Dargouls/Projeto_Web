@@ -21,21 +21,30 @@ form{
     transition: transform 0.4s ease-in-out;
 
 }
-@media screen and (max-width: 992px){ /*Para celulares e tablets*/
+/*
+@media screen and (max-width: 992px){ /*Para celulares e tablets
     form{
         width: 80%;
     }
-    label[for="input-nome"], label[for="input-email"], label[for="input-senha"]{ /*Deixando algumas labels invisíveis*/
+    label[for="input-nome"], label[for="input-email"], label[for="input-senha"]{ /*Deixando algumas labels invisíveis
         display: none;
         font-size: 1em;
     }
     #area-text{
         text-align: center;
     }
-    .inputTexto{ /*inputs de digitar aumentam de tamanho*/
+    .inputTexto{ /*inputs de digitar aumentam de tamanho
         width: 90%;
     }
 }
+*/
+#area-text{/*Div que tem os inputs de digitar*/
+    text-align: right;
+}
+.inputTexto{
+    width: 60%;
+}
+/*
 @media screen and (min-width: 992px){
     #area-text{
         text-align: right;
@@ -43,7 +52,7 @@ form{
     .inputTexto{
         width: 60%;
     }
-}
+}*/
 form:focus-within{
     transform: scale(1.05);
 }
@@ -89,7 +98,7 @@ input[type=submit]:hover{
     color: #ffffff;
     background-color: rgb(131, 123, 243);
 }
-.link-login{ /*Link para caso o usuário já tenha uma conta*/
+.link-entrar{ /*Link para caso o usuário já tenha uma conta*/
     color: #999999;
 }
 .separador{

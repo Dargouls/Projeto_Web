@@ -2,7 +2,7 @@
 var nomeForm = document.getElementById("input-nome");
 var emailForm = document.getElementById("input-email");
 var senhaForm = document.getElementById("input-senha");
-
+var animacaoCirculo = false;
 placeholders();
 
 function validar(){
@@ -14,7 +14,7 @@ function validar(){
 		let camposVazios = [nomeForm, emailForm, senhaForm];
 		for (i=0; i < camposVazios.length; i++){
 			if (camposVazios[i].value == "") {
-				camposVazios[i].style.borderColor = "#ff7777"
+				camposVazios[i].style.borderColor = "#ff7777";
 			} else {
 				camposVazios[i].style.borderColor = "#7eceef";
 			}
