@@ -18,13 +18,55 @@ header {
     text-align: right;
     transition: opacity 0.1s ease-in-out;
 }
-/*Para monitores desktop e telas de tamanho semelhante*/
+#navegacao-site{ /*nav com os botões de navegação pelo site*/
+    width: 70%;
+    text-align: center;
+}
+#botoes-navegacao li{ /*Botões de navegação do site*/
+    margin-right: 3%;
+}
+#ul-gerenciar-conta{
+    display: inline-flex;
+}
+
+.botoesLogin{
+    white-space: nowrap; /*Para a linha não quebrar com o espaço*/
+    box-sizing: border-box;
+    text-align: center;
+    padding: 5px  30px;
+    border-radius: 5px;
+    margin-right: 10px;
+    outline: none;
+}
+.botoesLogin:focus{
+    border: 2px solid rgb(123, 123, 221);
+}
+nav a{
+    transition: all 0.2s ease-out;
+}
+nav a:hover{
+    color: rgb(82, 82, 82);
+    text-decoration: none;
+}
+#login{ /*Botão de login*/
+    background-color: white;
+}
+#cadastro{ /*Botão de cadastro*/
+    background-color:  #faf5b1;
+}
+.dropdownContent{ /*Para o dropdown n influenciar na posição dos outros botões do nav*/
+    position: absolute;
+}
+#dropdown-mobile{ /*Escondendo o nav q vai aparecer somente em dispositivos menores*/
+    display: none;
+}
+/*Para monitores desktop e telas de tamanho semelhante*
 @media screen and (min-width: 992px){
-    #navegacao-site{ /*nav com os botões de navegação pelo site*/
+    #navegacao-site{ /*nav com os botões de navegação pelo site*
         width: 70%;
         text-align: center;
     }
-    #botoes-navegacao li{ /*Botões de navegação do site*/
+    #botoes-navegacao li{ /*Botões de navegação do site*
         margin-right: 3%;
     }
     #ul-gerenciar-conta{
@@ -32,7 +74,7 @@ header {
     }
     
     .botoesLogin{
-        white-space: nowrap; /*Para a linha não quebrar com o espaço*/
+        white-space: nowrap; /*Para a linha não quebrar com o espaço*
         box-sizing: border-box;
         text-align: center;
         padding: 5px  30px;
@@ -49,32 +91,32 @@ header {
     nav a:hover{
         color: rgb(82, 82, 82);
     }
-    #login{ /*Botão de login*/
+    #login{ /*Botão de login*
         background-color: white;
     }
-    #cadastro{ /*Botão de cadastro*/
+    #cadastro{ /*Botão de cadastro*
         background-color:  #faf5b1;
     }
-    .dropdownContent{ /*Para o dropdown n influenciar na posição dos outros botões do nav*/
+    .dropdownContent{ /*Para o dropdown n influenciar na posição dos outros botões do nav*
         position: absolute;
     }
-    #dropdown-mobile{ /*Escondendo o nav q vai aparecer somente em dispositivos menores*/
+    #dropdown-mobile{ /*Escondendo o nav q vai aparecer somente em dispositivos menores*
         display: none;
     }
 }
-/*Para dispositivos menores no modo retrato*/
+/*Para dispositivos menores no modo retrato*
 @media screen and (min-width: 768px) and (max-width: 992px){
-    header nav { /*O nav irá ocupar todo a largura possível, ou seja, da imagem da logo até o final*/
+    header nav { /*O nav irá ocupar todo a largura possível, ou seja, da imagem da logo até o final*
         width: 100%;
     }
     nav{
         text-align: right;
     }
     
-    #botoes-navegacao, #gerenciar-conta{ /*Escondendo os botões de navegação quando estiver em telas menores*/
+    #botoes-navegacao, #gerenciar-conta{ /*Escondendo os botões de navegação quando estiver em telas menores*
         display: none;
     }
-    #dropdown-mobile { /*Como o div do dropdown será mostrado*/
+    #dropdown-mobile { /*Como o div do dropdown será mostrado*
         display: inline-block;
     }
     #hamburguer-button{
@@ -86,7 +128,7 @@ header {
         border-style: none;
         background-color: #ffffff00;
     }
-    .dropdownContent { /*Conteúdo do botão dropdown*/
+    .dropdownContent { /*Conteúdo do botão dropdown*
         margin-top: 20px;
         width: 100%;
         position: relative;
@@ -96,27 +138,28 @@ header {
         display: none;
     }
 }
+
 @media screen and (max-width: 768px){
     header {
         height: 85px;
     }
-    #img-logo { /*Imagem dentro da barra de navegação*/
+    #img-logo { /*Imagem dentro da barra de navegação*
         margin-left: 10px;
         margin-top: 10px;
         width: 10em;
         text-align: right;
     }
-    header nav { /*O nav irá ocupar todo a largura possível, ou seja, da imagem da logo até o final*/
+    header nav { /*O nav irá ocupar todo a largura possível, ou seja, da imagem da logo até o final*
         width: 100%;
     }
     nav{
         text-align: right;
     }
     
-    #botoes-navegacao, #gerenciar-conta{ /*Escondendo os botões de navegação quando estiver em telas menores*/
+    #botoes-navegacao, #gerenciar-conta{ /*Escondendo os botões de navegação quando estiver em telas menores*
         display: none;
     }
-    #dropdown-mobile { /*Como o div do dropdown será mostrado*/
+    #dropdown-mobile { /*Como o div do dropdown será mostrado*
         display: inline-block;
     }
     #hamburguer-button{
@@ -128,7 +171,7 @@ header {
         border-style: none;
         background-color: rgba(255, 255, 255, 0);
     }
-    .dropdownContent { /*Conteúdo do botão dropdown*/
+    .dropdownContent { /*Conteúdo do botão dropdown*
         margin-top: 20px;
         width: 100%;
         position: relative;
@@ -138,7 +181,7 @@ header {
         display: none;
     }
 }
-
+*/
 header li, .footer li, .footerFixo li{ /*formatando como todas as <li> serão posicionadas*/
     display: inline;
 }

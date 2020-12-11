@@ -1,11 +1,16 @@
 
-var nomeForm = document.getElementById("input-nome");
-var emailForm = document.getElementById("input-email");
-var senhaForm = document.getElementById("input-senha");
-var animacaoCirculo = false;
+const nomeForm = document.getElementById("input-nome");
+const emailForm = document.getElementById("input-email");
+const senhaForm = document.getElementById("input-senha");
+const btnNaoAceitarTermos = document.getElementById("btn-nao-aceitar-termos");
+const btnAceitarTermos = document.getElementById("btn-aceitar-termos");
+const btnSubmit = document.getElementById("btn-criar-conta");
+var termos = false;
+
 placeholders();
 
 function validar(){
+	var btnSubmit = document.getElementById("btn-criar-conta");
 	var sexoForm = document.getElementById("input-sexo");
 	var erro = document.getElementById("erro-preencher");
 
@@ -23,7 +28,11 @@ function validar(){
 		erro.style = 'color: black; background-color: #ff2f2f; border-radius: 2px';
         nomeForm.focus();
     } else {
-		alert("Conta criada com sucesso!")
+		if (termos) {
+			alert("Conta criada com sucesso!")
+		} else{
+			btnSubmit.setAttribute("data-toggle", "modal");
+		}
 	}
     
 } 
@@ -37,4 +46,14 @@ function placeholders (){ //Mudar o conteúdo dos placeholders no HTML para disp
 
 		senhaForm.placeholder = "Senha (6-12 caracteres)";
 	}
+}
+
+function aceitarTermos() {
+	//Quando o usuário aceitar os termos e condições, o botão poderá enviar o formulário
+	termos = true;
+	btnSubmit.setAttribute("type", "submit");
+	btnSubmit.style = "background-color: #837bf3; color: white";
+}
+function naoAceitarTermos() {
+	termos = false;
 }
