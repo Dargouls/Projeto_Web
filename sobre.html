@@ -9,6 +9,7 @@
         <title>Sobre</title>
         <link rel="stylesheet" href="CSS (padraoDoSite).css">
         <link rel="stylesheet" href="CSS (sobre).css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="Images/ebook.png">
         <link rel="stylesheet" href="Images/Logo do site.png">
         <link rel="stylesheet" href="Images/Madeira clara.png">
@@ -21,18 +22,32 @@
   <body>
     
     <script src="Scripts/padraoDoSite.js"></script> <!--Adicionando o HTML padrão do site-->
-    
-    <div id="interface">
-      <h1>Participações no projeto</h1>
-      <p>☆José Paulo dos Santos Dias☆</p>
-      <p>◇</p>
-      <p>☆Shirley Matias da Silva☆</p>
-      <p>◇</p>
-      <p>☆Franklin Diego da Silva Tavares☆</p>
-      <p>◇</p>
-      <p>☆Josivaldo Gabriel Azevedo dos Santos☆</p>
-      <p>◇</p>
-      <p>☆Jaciel Jorge da Silva☆</p>
+
+
+
+<div id="interface">
+
+      <div class="pos-f-t">
+        <nav class="navbar navbar-dark bg-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+            <span>Participações no Projeto</span>
+          </button>
+        </nav>
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-dark p-4">
+            <span class="text-muted"><p>☆José Paulo dos Santos Dias☆</p>
+              <p>◇</p>
+              <p>☆Shirley Matias da Silva☆</p>
+              <p>◇</p>
+              <p>☆Franklin Diego da Silva Tavares☆</p>
+              <p>◇</p>
+              <p>☆Josivaldo Gabriel Azevedo dos Santos☆</p>
+              <p>◇</p>
+              <p>☆Jaciel Jorge da Silva☆</p></span>
+          </div>
+        </div>
+      </div>
 
       <table id="tabReferencias">
         <caption><h2>Referências</h2></caption> <!--Título da tabela-->
@@ -101,7 +116,7 @@
     <!--Bootstrap-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
 
   </body>
 </html>
