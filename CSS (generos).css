@@ -1,9 +1,16 @@
 /*CSS da página Generos.html*/
 
-
+html{
+  scroll-behavior: smooth;
+}
 body{
   margin: 0px;
   background-color: #18191a;
+}
+/*bootstrap*/
+#list-example{
+  position: fixed;
+  right: 0%;
 }
 .tabGenero{
   background-color: #313436; /*Eu posso colocar uma outra capa do msm livro com blur no fundo*/
