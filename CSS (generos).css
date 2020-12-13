@@ -11,6 +11,10 @@ body{
 #list-example{
   position: fixed;
 }
+.noPadding{
+  padding: 0% !important;
+}
+
 .tabGenero{ /*Tabela de cada gênero*/
   background-color: #313436; /*Eu posso colocar uma outra capa do msm livro com blur no fundo*/
   border-radius: 0px 20px 20px 0px;
