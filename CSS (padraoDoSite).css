@@ -18,48 +18,6 @@ header {
     text-align: right;
     transition: opacity 0.1s ease-in-out;
 }
-#navegacao-site{ /*nav com os botões de navegação pelo site*/
-    width: 70%;
-    text-align: center;
-}
-#botoes-navegacao li{ /*Botões de navegação do site*/
-    margin-right: 3%;
-}
-#ul-gerenciar-conta{
-    display: inline-flex;
-}
-
-.botoesLogin{
-    white-space: nowrap; /*Para a linha não quebrar com o espaço*/
-    box-sizing: border-box;
-    text-align: center;
-    padding: 5px  30px;
-    border-radius: 5px;
-    margin-right: 10px;
-    outline: none;
-}
-.botoesLogin:focus{
-    border: 2px solid rgb(123, 123, 221);
-}
-nav a{
-    transition: all 0.2s ease-out;
-}
-nav a:hover{
-    color: rgb(82, 82, 82);
-    text-decoration: none;
-}
-#login{ /*Botão de login*/
-    background-color: white;
-}
-#cadastro{ /*Botão de cadastro*/
-    background-color:  #faf5b1;
-}
-.dropdownContent{ /*Para o dropdown n influenciar na posição dos outros botões do nav*/
-    position: absolute;
-}
-#dropdown-mobile{ /*Escondendo o nav q vai aparecer somente em dispositivos menores*/
-    display: none;
-}
 /*Para monitores desktop e telas de tamanho semelhante*/
 @media screen and (min-width: 992px){
     #navegacao-site{ /*nav com os botões de navegação pelo site*/
@@ -210,6 +168,7 @@ header a { /*Tirando decorações dos links*/
 .dropdownContent { /*Conteúdo do botão dropdown*/
     display: none;
     overflow: hidden;
+    z-index: 1; /*Normalmente n seria preciso, mas sem isso o drop n está sobrepondo o bootstrap*/
     background-color: #313030;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
