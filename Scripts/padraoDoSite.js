@@ -16,7 +16,7 @@ var header = '<header> <!--Barra superior-->'+ //Header padrão do site
 		'<a href="cadastro.html#formulario-cadastro"><span>Criar conta</span></a>'+
 		'<a href="leitura.html"><span>PDF (retirar)</span></a>'+
 		'<a href="sobre.html"><span>Sobre</span></a>'+
-		'<a href="generos.html"<span>Indicações de Livros</span></a>'+
+		'<a href="generos.html"><span>Indicações de Livros</span></a>'+
 		'<a href="escritores.html"><span>Hall dos escritores</span></a>'+
 	  '</div>'+
 	'</div>'+
