@@ -14,4 +14,4 @@ Entrega 7:
 3.3) Integrantes da equipe: Josivaldo Gabriel Azevedo dos Santos; José Paulo dos Santos Dias; Shirley Matias da Silva; Jaciel Jorge da Silva; Franklin Diego da Silva Tavares.
 
 
-Navegadores testados: Opera desktop.
+Navegadores testados: Opera desktop e Opera touch (mobile).
