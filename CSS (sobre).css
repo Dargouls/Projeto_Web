@@ -7,15 +7,19 @@ body{
 }
 #interface{
     text-align: center;
-    margin: 12%;
+    /*margin: 12%;*/
     margin-top: 5%;
     padding: 2%;
     background-color: #313436;
     border-radius: 30px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
 }
+#navbar-participacoes{
+    width: 100%;
+}
+
 #tabReferencias{
-    width: 70%;
+    width: 60%;
 }
 /*
 @media screen and (min-width: 992px){
