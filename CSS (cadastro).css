@@ -1,8 +1,6 @@
 
 /*Página de cadastro de novo usuário*/
-html{
-    scroll-behavior: smooth;
-}
+
 body{
     background-color: #18191a;
     background-image: url("Images/papel-de-parede-abstrato.png");

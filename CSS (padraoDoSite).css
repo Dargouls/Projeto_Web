@@ -1,8 +1,31 @@
 
 /*Padrão do site*/
 
+html{
+    scroll-behavior: smooth;
+    overflow-y: overlay;
+}
 body{
     margin: 0%;
+}
+::-webkit-scrollbar {
+    width: 15px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #00000000; 
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #0000004a;
+    border-radius: 3px;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #0000008a; 
 }
 /*Header e Nav*/
 header {
