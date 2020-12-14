@@ -23,89 +23,82 @@
     
     <script src="Scripts/padraoDoSite.js"></script> <!--Adicionando o HTML padrão do site-->
 
-
-
-    <div id="interface" class="container">
-      <div class="col">
-        <div class="row" id="row-participacoes">
-          <div class="pos-f-t" id="navbar-participacoes">
-            <nav class="navbar navbar-dark bg-dark">
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Alterna navegação">
-                <span class="navbar-toggler-icon"></span>
-                <span>Participações no Projeto</span>
-              </button>
-            </nav>
-            <div class="collapse" id="navbarToggleExternalContent">
-              <div class="bg-dark p-4">
-                <span class="text-muted"><p>☆José Paulo dos Santos Dias☆</p>
-                  <p>◇</p>
-                  <p>☆Shirley Matias da Silva☆</p>
-                  <p>◇</p>
-                  <p>☆Franklin Diego da Silva Tavares☆</p>
-                  <p>◇</p>
-                  <p>☆Josivaldo Gabriel Azevedo dos Santos☆</p>
-                  <p>◇</p>
-                  <p>☆Jaciel Jorge da Silva☆</p></span>
-              </div>
-            </div>
+    <div id="interface">
+       <!--navbar dos participantes do trabalho-->
+      <div class="pos-f-t" id="navbar-participacoes">
+        <nav class="navbar navbar-dark bg-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+            <span>Participações no Projeto</span>
+          </button>
+        </nav>
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-dark p-4">
+            <span class="text-muted"><p>☆José Paulo dos Santos Dias☆</p>
+              <p>◇</p>
+              <p>☆Shirley Matias da Silva☆</p>
+              <p>◇</p>
+              <p>☆Franklin Diego da Silva Tavares☆</p>
+              <p>◇</p>
+              <p>☆Josivaldo Gabriel Azevedo dos Santos☆</p>
+              <p>◇</p>
+              <p>☆Jaciel Jorge da Silva☆</p></span>
           </div>
         </div>
-        <div class="row" id="col-tab-referencias">
-          <table id="tabReferencias">
-            <caption><h2>Referências</h2></caption> <!--Título da tabela-->
-            <th><p>Escritores</p></th> <!--Cabeçalho-->
-            <th><p>Link</p><s/th>
-            <tbody> <!--Corpo da coluna com as linhas zebradas-->
-              <tr>
-                <td><p>Machado de Assis</p></td>
-                <td><a class="link" target="_blank" href="https://pt.m.wikipedia.org/wiki/Machado_de_Assis">Wikipedia do escritor</a></td>
-              </tr>
-              <tr>
-                <td><p>Álvares de Azevedo</p></td>
-                <td><a class="link" target="_blank" href="https://pt.m.wikipedia.org/wiki/%C3%81lvares_de_Azevedo">Wikipedia do escritor</a></td>
-              </tr>
-              <tr>
-                <td><p>Lima Barreto</p></td>
-                <td><a class="link" target="_blank" href="https://pt.m.wikipedia.org/wiki/Lima_Barreto_(escritor)">Wikipedia do escritor</a></td>
-              </tr>
-              <tr>
-                <td><p>Carolina de Jesus</p></td>
-                <td><a class="link" target="_blank" href="https://pt.m.wikipedia.org/wiki/Carolina_de_Jesus">Wikipedia do escritor</a></td>
-              </tr>
-              <tr>
-                <td><p>Manoel de Barros</p></td>
-                <td><a class="link" target="_blank" href="https://pt.m.wikipedia.org/wiki/Manoel_de_Barros">Wikipedia do escritor</a></td>
-              </tr>
-              <tr>
-                <td><p>Ernest Hemingway</p></td>
-                <td><a class="link" target="_blank" href="https://pt.m.wikipedia.org/wiki/Ernest_Hemingway">Wikipedia do escritor</a></td>
-              </tr>
-              <tr>
-                <td><p>Vidiadhar Naipaul</p></td>
-                <td><a class="link" target="_blank" href="https://pt.m.wikipedia.org/wiki/Vidiadhar_Naipaul">Wikipedia do escritor</a></td>
-              </tr>
-              <tr>
-                <td><p>Jean-Paul Sartre</p></td>
-                <td><a class="link" target="_blank" href="https://pt.m.wikipedia.org/wiki/Jean-Paul_Sartre">Wikipedia do escritor</a></td>
-              </tr>
-              <tr>
-                <td><p>Umberto Eco</p></td>
-                <td><a class="link" target="_blank" href="https://pt.m.wikipedia.org/wiki/Umberto_Eco">Wikipedia do escritor</a></td>
-              </tr>
-              <tr>
-                <td><p>Sophia de Mello Breyner Andresen</p></td>
-                <td><a class="link" target="_blank" href="https://pt.m.wikipedia.org/wiki/Sophia_de_Mello_Breyner_Andresen">Wikipedia do escritor</a></td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <tr> <!--Coluna mesclada-->
-                <td colspan="2"><a class="link" target="_blank" href="escritores.html">Link para todas as biografias destes escritores</a></td>
-              </tr>
-            </tfoot>
-          </table>
-        </div>
       </div>
-
+      <!--Tabela com as referencias q usamos pra falar sobre os escritores da página "escritores.html"-->
+      <table id="tab-referencias">
+        <caption><h2>Referências</h2></caption> <!--Título da tabela-->
+        <th><p>Escritores</p></th> <!--Cabeçalho-->
+        <th><p>Link</p><s/th>
+        <tbody> <!--Corpo da coluna com as linhas zebradas-->
+          <tr>
+            <td><p>Machado de Assis</p></td>
+            <td><a class="link" target="_blank" href="https://pt.m.wikipedia.org/wiki/Machado_de_Assis">Wikipedia do escritor</a></td>
+          </tr>
+          <tr>
+            <td><p>Álvares de Azevedo</p></td>
+            <td><a class="link" target="_blank" href="https://pt.m.wikipedia.org/wiki/%C3%81lvares_de_Azevedo">Wikipedia do escritor</a></td>
+          </tr>
+          <tr>
+            <td><p>Lima Barreto</p></td>
+            <td><a class="link" target="_blank" href="https://pt.m.wikipedia.org/wiki/Lima_Barreto_(escritor)">Wikipedia do escritor</a></td>
+          </tr>
+          <tr>
+            <td><p>Carolina de Jesus</p></td>
+            <td><a class="link" target="_blank" href="https://pt.m.wikipedia.org/wiki/Carolina_de_Jesus">Wikipedia do escritor</a></td>
+          </tr>
+          <tr>
+            <td><p>Manoel de Barros</p></td>
+            <td><a class="link" target="_blank" href="https://pt.m.wikipedia.org/wiki/Manoel_de_Barros">Wikipedia do escritor</a></td>
+          </tr>
+          <tr>
+            <td><p>Ernest Hemingway</p></td>
+            <td><a class="link" target="_blank" href="https://pt.m.wikipedia.org/wiki/Ernest_Hemingway">Wikipedia do escritor</a></td>
+          </tr>
+          <tr>
+            <td><p>Vidiadhar Naipaul</p></td>
+            <td><a class="link" target="_blank" href="https://pt.m.wikipedia.org/wiki/Vidiadhar_Naipaul">Wikipedia do escritor</a></td>
+          </tr>
+          <tr>
+            <td><p>Jean-Paul Sartre</p></td>
+            <td><a class="link" target="_blank" href="https://pt.m.wikipedia.org/wiki/Jean-Paul_Sartre">Wikipedia do escritor</a></td>
+          </tr>
+          <tr>
+            <td><p>Umberto Eco</p></td>
+            <td><a class="link" target="_blank" href="https://pt.m.wikipedia.org/wiki/Umberto_Eco">Wikipedia do escritor</a></td>
+          </tr>
+          <tr>
+            <td><p>Sophia de Mello Breyner Andresen</p></td>
+            <td><a class="link" target="_blank" href="https://pt.m.wikipedia.org/wiki/Sophia_de_Mello_Breyner_Andresen">Wikipedia do escritor</a></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr> <!--Coluna mesclada-->
+            <td colspan="2"><a class="link" target="_blank" href="escritores.html">Link para todas as biografias destes escritores</a></td>
+          </tr>
+        </tfoot>
+      </table>
     </div>
 
     <div class="footer"> <!--Footer da página-->

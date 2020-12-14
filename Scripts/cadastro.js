@@ -14,7 +14,7 @@ function validar(){
 	var sexoForm = document.getElementById("input-sexo");
 	var erro = document.getElementById("erro-preencher");
 
-    if(nomeForm.value == "" || emailForm.value == "" || senhaForm.value == "" || sexoForm.value == "valor-padrao"){
+    if(nomeForm.value == "" || emailForm.value == "" || senhaForm.value == ""){
 		event.preventDefault();
 		let camposVazios = [nomeForm, emailForm, senhaForm];
 		for (i=0; i < camposVazios.length; i++){

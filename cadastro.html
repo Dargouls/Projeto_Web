@@ -45,50 +45,43 @@
       </div>
     </div>
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col">
-          <form action="#" method="POST" id="formulario-cadastro" name="formulario">
-            <div id="area-text">
-              <p><label for="input-nome">Nome de usuário: </label>
-                <input class="inputTexto" type="text" id="input-nome" name="nome" minlength="4" maxlength="12" placeholder="Entre 4 e 12 dígitos"></p>
-        
-              <p><label for="input-email">E-mail: </label>
-                <input class="inputTexto" type="email"  id="input-email" name="email" placeholder="E-mail"></p>
-        
-              <p><label for="input-senha">Senha: </label>
-                <input class="inputTexto" type="password" id="input-senha" name="senha" min="6" maxlength="12" placeholder="Entre 6 e 12 dígitos:"></p>
-            </div>
-            
-            <p><label for="input-sexo">Sexo:</label>
-            <select id="input-sexo" name="sexo">
-              <option value="valor-padrao"><p>--</p></option>
-              <option value="valor-masculino"><p>Masculino</p></option>
-              <option value="valor-feminino"><p>Feminino</p></option>
-              <option value="valor-outro">Outro</option>
-            </select></p>
-      
-            <p><fieldset class="fieldRadiobox">
-              <legend><span>Deseja receber nossas novidades?</span></legend>
-              <label for="opcao-sim"><span>Sim</span></label>
-              <input type="radio" name="novidades" id="opcao-sim" checked>
-              <label for="opcao-nao"><span>Não</span></label>
-              <input type="radio" name="novidades" id="opcao-nao">
-            </fieldset></p>
-      
-            <p><input type="button" id="btn-criar-conta" value="Criar conta" onclick="validar()" data-target="#ModalLongoExemplo"></p>
-            <p id="erro-preencher"></p>
-            <div id="separador-divs">
-              <div class="separador"></div>
-              <div class="separador"></div>
-            </div>
-            <div id="animacao-link-entrar"></div>
-            <p class="link-entrar">Já tem uma conta? <a href="entrar.html#formulario-entrar" class="link-entrar">Faça login</a></p>
-          </form>
-        </div>
+    <form action="#" method="POST" id="formulario-cadastro" name="formulario">
+      <div id="area-text">
+        <p><label for="input-nome">Nome de usuário: </label>
+          <input class="inputTexto" type="text" id="input-nome" name="nome" minlength="4" maxlength="12" placeholder="Entre 4 e 12 dígitos"></p>
+  
+        <p><label for="input-email">E-mail: </label>
+          <input class="inputTexto" type="email"  id="input-email" name="email" placeholder="E-mail"></p>
+  
+        <p><label for="input-senha">Senha: </label>
+          <input class="inputTexto" type="password" id="input-senha" name="senha" min="6" maxlength="12" placeholder="Entre 6 e 12 dígitos:"></p>
       </div>
-      
-    </div>
+      <!--
+      <p><label for="input-sexo">Sexo:</label>
+      <select id="input-sexo" name="sexo">
+        <option value="valor-padrao"><p>--</p></option>
+        <option value="valor-masculino"><p>Masculino</p></option>
+        <option value="valor-feminino"><p>Feminino</p></option>
+        <option value="valor-outro">Outro</option>
+      </select></p>
+    -->
+      <p><fieldset class="fieldRadiobox">
+        <legend><span>Deseja receber nossas novidades?</span></legend>
+        <label for="opcao-sim"><span>Sim</span></label>
+        <input type="radio" name="novidades" id="opcao-sim" checked>
+        <label for="opcao-nao"><span>Não</span></label>
+        <input type="radio" name="novidades" id="opcao-nao">
+      </fieldset></p>
+
+      <p><input type="button" id="btn-criar-conta" value="Criar conta" onclick="validar()" data-target="#ModalLongoExemplo"></p>
+      <p id="erro-preencher"></p>
+      <div id="separador-divs">
+        <div class="separador"></div>
+        <div class="separador"></div>
+      </div>
+      <div id="animacao-link-entrar"></div>
+      <p class="link-entrar">Já tem uma conta? <a href="entrar.html#formulario-entrar" class="link-entrar">Faça login</a></p>
+    </form>
     
     
     <div class="footer"> <!--Footer da página-->
@@ -100,6 +93,7 @@
 			</ul>
     </div>
     <script src="Scripts/cadastro.js"></script>
+    
     <!--Bootstrap-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
