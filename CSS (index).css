@@ -32,20 +32,27 @@ body{
     
 }
 #lerPDF{ /*Botão para ler um documento*/
-  width: 400px;/*30%;*/
-  height: 150px;
-  background-color: rgb(157, 151, 253);
-  box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.30);
-  border-radius: 7px;
-  font-size: 2.187em;
-  line-height: 50px;
-  color: white;
-  text-align: center;
-  border-style: dotted;
-  transition: background-color 0.25s ease-in-out, box-shadow 0.35s ease-out;
+    padding: 0;
+    width: 400px;/*30%;*/
+    height: 150px;
+    background-color: rgb(157, 151, 253);
+    box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.30);
+    border-radius: 7px;
+    font-size: 2.187em;
+    line-height: 50px;
+    color: white;
+    text-align: center;
+    border-style: dotted;
+    transition: background-color 0.25s ease-in-out, box-shadow 0.35s ease-out;
 }
 #lerPDF:hover{ /*Evento ao passar o mouse em cima*/
     background: rgb(131, 123, 243);
     box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.7);
     
+}
+#label-selecionar-arquivo{
+    padding: 50px;
+}
+#selecionar-arquivo{
+    display: none;
 }

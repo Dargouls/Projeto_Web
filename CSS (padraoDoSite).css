@@ -3,7 +3,7 @@
 
 html{
     scroll-behavior: smooth;
-    overflow-y: overlay;
+    overflow-y: overlay;;
 }
 body{ /*grid padrão do site: header > conteúdo > footer*/
     margin: 0%;

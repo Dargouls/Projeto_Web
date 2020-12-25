@@ -25,3 +25,11 @@ body{
   border-style: dotted;
   transition: background-color 0.25s ease-in-out, box-shadow 0.35s ease-out;
 }
+/*
+#label-selecionar-arquivo{
+  padding: 50px 177px;
+}
+*/
+#selecionar-arquivo{
+  display: none;
+}
