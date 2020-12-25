@@ -24,13 +24,13 @@ body{
 }
 
 /*Fundos de cada bloco de informações dos livros*/
-#euEEsseMeuCoracao{ 
+#eu-e-esse-meu-coracao{ 
     background-image: url("Images/Capas-Livros/fundos/euEEsseMeuCoracao-livro-nacional.png")
 }
-#prisioneirosDaMente{
+#prisioneiros-da-mente{
     background-image: url("Images/Capas-Livros/fundos/prisioneirosDaMente-livro-nacionais.png");
 }
-#paraSempre{
+#para-sempre{
     background-image: url("Images/Capas-Livros/fundos/paraSempre-livro-nacionais.png");
 }
 .temaFundo { /*Div de cada livro*/

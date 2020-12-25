@@ -2,7 +2,7 @@
 
 
 body{
-    margin: 0%;
+    margin: 0;
     background-color:#18191a;
 }
 h3{
@@ -12,7 +12,6 @@ h3{
 }
 #interface{
     text-align: center;
-    margin-top: 5%;
     padding: 1%;
     background-color: #313436;
     border-radius: 30px;
@@ -20,12 +19,12 @@ h3{
 }
 @media screen and (min-width: 992px){
     #interface{
-        margin: 12%;
+        margin: 5% 12% 0 12%;
     }
 }
 @media screen and (max-width: 992px){
     #interface{
-        margin: 5%;
+        margin: 5% 5% 0 5%;
     }
 }
 #tituloPagina{

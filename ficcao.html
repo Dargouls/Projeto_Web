@@ -22,160 +22,152 @@
   
   <script src="Scripts/padraoDoSite.js"></script> <!--Adicionando o HTML padrão do site-->
 
-  <div class="marcaPagina"> <!--Marca página indicando o conteúdo da página-->
-    <div id="marca-pagina-corpo"> <!--Corpo do marca-página-->
-      <img class="icones" src="Images/Icones/death-star-icon.png" alt="">
-      <h1 id="tituloPagina">Ficção</h1>
-    </div>
-    <div id="marca-pagina-ponta"></div> <!--Ponta triângular do marca página-->
-  </div>
+  <div class="container-noBootstrap">
+    <aside class="marcaPagina"> <!--Marca página indicando o conteúdo da página-->
+      <div id="marca-pagina-corpo"> <!--Corpo do marca-página-->
+        <img class="icones" src="Images/Icones/death-star-icon.png" alt="">
+        <h1 id="tituloPagina">Ficção</h1>
+      </div>
+      <div id="marca-pagina-ponta"></div> <!--Ponta triângular do marca página-->
+    </aside>
 
-  <div id="conteudo"> <!--Todo o conteúdo central da página-->
+    <main id="conteudo"> <!--Todo o conteúdo central da página-->
+      <div class="temaFundo" id="aGuardia">
+        <table class="tabLivro" id="livro-aGuardia"><!--Tabela do livro-->
+          <th><img class="capaLivro" src="Images/Capas-Livros/a guardiã-livro-ficcao.jpg" alt=""></th><!--Capa do livro-->
+          <tr>
+            <td>
+              <h2>A Guardiã</h2>
+            </td> <!--Título do livro-->
+          </tr>
+          <tr>
+            <td>
+              <p> <!--Sinopse-->
+                Maylene Barrow vela os mortos de sua cidade natal cuidando das sepulturas, plantando jardins e contando
+                histórias à beira das lápides. Mas quando ela mesma morre, sua neta Rebbekah, que não pisava em Claysville
+                desde o suicídio da irmã, é obrigada a se defrontar com uma herança da qual não pode fugir: tornar-se ela
+                a guardiã dos mortos da outrora pacata cidadezinha.
+              </p>
+          </tr>
+          <tr>
+            <td>
+              <p>Data da primeira publicação: 17 de maio de 2011</p>
+            </td>
+          </tr>
+          <tr>
+            <td><!--Autor-->
+              <p>Autora: Melissa Marr</p>
+          </tr>
+          <tr>
+            <td><!--Link para a compra do livro-->
+              <a target="_blank"
+                href="https://m.pontofrio.com.br/a-guardia-1500402233.html?utm_medium=cpc&amp;utm_source=gp_pla&amp;idLojista=34702&amp;utm_campaign=livr_showcase&amp;gclid=CjwKCAiAqJn9BRB0EiwAJ1SzteOO9iy38gm_8mxwBzDbolnxucnvDs8Wd_7RhWc_rFxweaEgyhWZJBoCuKEQAvD_BwE">
+                <p class="link">Link para adquirir</p>
+              </a>
+            </td>
+          </tr>
+        </table>
+      </div>
 
-    <div class="temaFundo" id="aGuardia">
-      <table class="tabLivro" id="livro-aGuardia"><!--Tabela do livro-->
-        <th><img class="capaLivro" src="Images/Capas-Livros/a guardiã-livro-ficcao.jpg" alt=""></th><!--Capa do livro-->
-        <tr>
-          <td>
-            <h2>A Guardiã</h2>
-          </td> <!--Título do livro-->
-        </tr>
-        <tr>
-          <td>
-            <p> <!--Sinopse-->
-              Maylene Barrow vela os mortos de sua cidade natal cuidando das sepulturas, plantando jardins e contando
-              histórias à beira das lápides. Mas quando ela mesma morre, sua neta Rebbekah, que não pisava em Claysville
-              desde o suicídio da irmã, é obrigada a se defrontar com uma herança da qual não pode fugir: tornar-se ela
-              a guardiã dos mortos da outrora pacata cidadezinha.
-            </p>
-        </tr>
-        <tr>
-          <td>
-            <p>Data da primeira publicação: 17 de maio de 2011</p>
-          </td>
-        </tr>
-        <tr>
-          <td><!--Autor-->
-            <p>Autora: Melissa Marr</p>
-        </tr>
-        <tr>
-          <td><!--Link para a compra do livro-->
-            <a target="_blank"
-              href="https://m.pontofrio.com.br/a-guardia-1500402233.html?utm_medium=cpc&amp;utm_source=gp_pla&amp;idLojista=34702&amp;utm_campaign=livr_showcase&amp;gclid=CjwKCAiAqJn9BRB0EiwAJ1SzteOO9iy38gm_8mxwBzDbolnxucnvDs8Wd_7RhWc_rFxweaEgyhWZJBoCuKEQAvD_BwE">
-              <p class="link">Link para adquirir</p>
-            </a>
-          </td>
-        </tr>
-      </table>
-    </div>
+      <div class="temaFundo" id="anjoSilencioso">
+        <table class="tabLivro" id="livro-anjoSilencioso">
+          <!--Tabela do livro-->
+          <th><img class="capaLivro" src="Images/Capas-Livros/O anjo silencioso-livro-ficcao.jpg" alt=""></th>
+          <!--Capa do livro-->
+          <tr>
+            <td>
+              <h2>O Anjo Silencioso</h2>
+            </td>
+            <!--Título do livro-->
+          </tr>
+          <tr>
+            <td>
+              <!--Sinopse-->
+              <p class="sinopse-1">
+                Nascido em 1917, Heinrich Böll assumiu papel central na cena cultural e literária alemã, desde os primeiros
+                anos do pós-guerra até 1985, quando faleceu. Sua obra ficcional, agraciada em 1972 com o Prêmio Nobel de
+                Literatura, voltou-se à representação do quotidiano dos cidadãos alemães, sob a perspectiva dos conflitos
+                morais e éticos vividos nos contextos de miséria, reconstrução e esplendor socioeconômico da sociedade alemã
+                ocidental.
+              </p>
+              <p class="sinopse-2">
+                O anjo silencioso é seu primeiro romance (1950), mas, por razões biográficas e econômicas, mesmo na Alemanha
+                só veio a público em edição póstuma, de 1992, quando o autor completaria 75 anos. A obra conta a história do
+                regresso do soldado Hans a sua cidade em ruínas, Colônia, no fim da Segunda Guerra Mundial.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Data da primeira publicação: 1992</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <!--Autor-->
+              <p>Autor: Heinrich Böll</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a target="_blank" href="https://www.amazon.com.br/anjo-silencioso-Heinrich-Böll/dp/8574480908">
+                <p class="link">Link para adquirir</p>
+              </a>
+            </td>
+          </tr>
+        </table>
+      </div>
 
-    <div class="temaFundo" id="anjoSilencioso">
-      <table class="tabLivro" id="livro-anjoSilencioso">
-        <!--Tabela do livro-->
-        <th><img class="capaLivro" src="Images/Capas-Livros/O anjo silencioso-livro-ficcao.jpg" alt=""></th>
-        <!--Capa do livro-->
-        <tr>
-          <td>
-            <h2>O Anjo Silencioso</h2>
-          </td>
-          <!--Título do livro-->
-        </tr>
-        <tr>
-          <td>
-            <!--Sinopse-->
-            <p class="sinopse-1">
-              Nascido em 1917, Heinrich Böll assumiu papel central na cena cultural e literária alemã, desde os primeiros
-              anos do pós-guerra até 1985, quando faleceu. Sua obra ficcional, agraciada em 1972 com o Prêmio Nobel de
-              Literatura, voltou-se à representação do quotidiano dos cidadãos alemães, sob a perspectiva dos conflitos
-              morais e éticos vividos nos contextos de miséria, reconstrução e esplendor socioeconômico da sociedade alemã
-              ocidental.
-            </p>
-            <p class="sinopse-2">
-              O anjo silencioso é seu primeiro romance (1950), mas, por razões biográficas e econômicas, mesmo na Alemanha
-              só veio a público em edição póstuma, de 1992, quando o autor completaria 75 anos. A obra conta a história do
-              regresso do soldado Hans a sua cidade em ruínas, Colônia, no fim da Segunda Guerra Mundial.
-            </p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p>Data da primeira publicação: 1992</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <!--Autor-->
-            <p>Autor: Heinrich Böll</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a target="_blank" href="https://www.amazon.com.br/anjo-silencioso-Heinrich-Böll/dp/8574480908">
-              <p class="link">Link para adquirir</p>
-            </a>
-          </td>
-        </tr>
-      </table>
-    </div>
-
-    <div class="temaFundo" id="euRobo">
-      <table class="tabLivro" id="livro-euRobo">
-        <!--Tabela do livro-->
-        <th><img class="capaLivro" src="Images/Capas-Livros/euRobo-livro-ficcao.jpg" alt=""></th>
-        <!--Capa do livro-->
-        <tr>
-          <td>
-            <h2>Eu, Robô</h2>
-          </td>
-          <!--Título do livro-->
-        </tr>
-        <tr>
-          <td>
-            <!--Sinopse-->
-            <p class="sinopse-1">
-              Eu, Robô é um conjunto de nove contos que relatam a evolução dos autômatos através do tempo. É neste livro
-              que são apresentadas as célebres Três Leis da Robótica: os princípios que regem o comportamento dos robôs e
-              que mudaram definitivamente a percepção que se tem sobre eles na própria ciência.
-            </p>
-            <p class="sinopse-2">
-              Eu, Robô inicia-se com uma entrevista com a Dra. Susan Calvin, uma psicóloga roboticista da U.S Robots &
-              Mechanical. Ela é o fio condutor da obra, responsável por contar os relatos de seu trabalho e também da
-              evolução dos autômatos.
-              Algumas histórias são mais leves e emocionantes como Robbie, o robô baba, outras, como Razão, levam o leitor
-              a refletir sobre religião e até sobre sua condição humana.
-            </p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p>Data da primeira publicação: 2 de dezembro de 1950</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <!--Autor-->
-            <p>Autor: Isaac Asimov</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <!--Link para a compra-->
-            <a target="_blank" href="https://www.amazon.com.br/Eu-Robo-Isaac-Asimov/dp/8576572001">
-              <p class="link">Link para adquirir</p>
-            </a>
-          </td>
-        </tr>
-      </table>
-    </div>
-  </div>
-
-  <div class="footer"> <!--Footer da página-->
-    <ul>
-      <li><span>© EbookReader 2020</span></li>
-      <li id="email"><span>SAC: SuporteAL@hotmail.com</span></li>
-      <li><a  class="link" target="_blank" href="https://github.com/JosivaldoGabriel/Projeto_Web">
-        Link para o repositório no Github</a></li>
-    </ul>
+      <div class="temaFundo" id="euRobo">
+        <table class="tabLivro" id="livro-euRobo">
+          <!--Tabela do livro-->
+          <th><img class="capaLivro" src="Images/Capas-Livros/euRobo-livro-ficcao.jpg" alt=""></th>
+          <!--Capa do livro-->
+          <tr>
+            <td>
+              <h2>Eu, Robô</h2>
+            </td>
+            <!--Título do livro-->
+          </tr>
+          <tr>
+            <td>
+              <!--Sinopse-->
+              <p class="sinopse-1">
+                Eu, Robô é um conjunto de nove contos que relatam a evolução dos autômatos através do tempo. É neste livro
+                que são apresentadas as célebres Três Leis da Robótica: os princípios que regem o comportamento dos robôs e
+                que mudaram definitivamente a percepção que se tem sobre eles na própria ciência.
+              </p>
+              <p class="sinopse-2">
+                Eu, Robô inicia-se com uma entrevista com a Dra. Susan Calvin, uma psicóloga roboticista da U.S Robots &
+                Mechanical. Ela é o fio condutor da obra, responsável por contar os relatos de seu trabalho e também da
+                evolução dos autômatos.
+                Algumas histórias são mais leves e emocionantes como Robbie, o robô baba, outras, como Razão, levam o leitor
+                a refletir sobre religião e até sobre sua condição humana.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Data da primeira publicação: 2 de dezembro de 1950</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <!--Autor-->
+              <p>Autor: Isaac Asimov</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <!--Link para a compra-->
+              <a target="_blank" href="https://www.amazon.com.br/Eu-Robo-Isaac-Asimov/dp/8576572001">
+                <p class="link">Link para adquirir</p>
+              </a>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </main>
   </div>
 </body>
 

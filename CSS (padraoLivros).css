@@ -10,6 +10,7 @@
     width: 80px;
     height: 80px;
 }
+
 @media screen and (min-width: 992px){ /*Para monitores de computador ou notebook*/
     .temaFundo{
         width: 50%;
@@ -38,11 +39,8 @@
         width: 100%;
     }
     .marcaPagina{
-        /*display: flex;
-        margin-top: 3%;*/
         float: right;
-        margin-right: 13%;
-        
+        width: 15vw;
     }
     #marca-pagina-corpo{
         width: 100px;

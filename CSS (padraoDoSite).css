@@ -5,34 +5,39 @@ html{
     scroll-behavior: smooth;
     overflow-y: overlay;
 }
-body{
+body{ /*grid padrão do site: header > conteúdo > footer*/
     margin: 0%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: [header]100px [main]1fr [footer]35px;
+    grid-template-areas: "header header" "container container" "footer footer";
+    min-height: 100vh;
 }
+.container-noBootstrap{
+    grid-area: container;
+    margin: 0 0 100px 0;
+}
+/*Scrollbar*/
 ::-webkit-scrollbar {
     width: 15px;
 }
-  
-  /* Track */
 ::-webkit-scrollbar-track {
     background: #00000000; 
 }
-   
-  /* Handle */
 ::-webkit-scrollbar-thumb {
     background: #0000004a;
     border-radius: 3px;
 }
-  
-  /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #0000008a; 
 }
+
 /*Header e Nav*/
 header {
+    display: flex;
+    grid-area: header;
     background-image: url("Images/Madeira clara.png");
     box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.5);
-    display: flex;
-    height: 100px;
 }
 
 #img-logo { /*Imagem dentro da barra de navegação*/
@@ -41,6 +46,23 @@ header {
     text-align: right;
     transition: opacity 0.1s ease-in-out;
 }
+#follow-github{
+    display: none;
+}
+#img-github{
+    position: relative;
+    width: 40px;
+    margin-right: 5px;
+}
+#btn-github{
+    padding: 0px 24px 0px 0px;
+    border-radius: 50em;
+    border: none;
+    outline-style: none;
+    background-color: #151515;
+    color: white;
+}
+
 /*Para monitores desktop e telas de tamanho semelhante*/
 @media screen and (min-width: 992px){
     #navegacao-site{ /*nav com os botões de navegação pelo site*/
@@ -121,6 +143,9 @@ header {
 }
 
 @media screen and (max-width: 768px){
+    body{
+        grid-template-rows: [header]100px [main]1fr [footer]min-content;
+    }
     header {
         height: 85px;
     }
@@ -160,6 +185,12 @@ header {
     }
     #email{
         display: none;
+    }
+    #link-github{
+        display: none;
+    }
+    #follow-github{
+        display: initial;
     }
 }
 
@@ -253,27 +284,15 @@ input{
     color: khaki;
     text-decoration: underline solid khaki;
 }
-.footer { /*Footer*/
+footer { /*Footer*/
+    grid-area: footer;
     background-image: url("Images/Madeira escura.jpg");
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    margin-top: 10%;
-    width: 100%;
-    height: 35px; /*Lembrar de mudar para porcentagem*/
-    color: white;
-}
-.footerFixo { /*Footer fixo na parte baixa da viewport*/
-    background-image: url("Images/Madeira escura.jpg");
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    position: fixed;
-    bottom: 0%;
-    width: 100%;
-    height: 35px; /*Lembrar de mudar para porcentagem*/
     color: white;
 }
 /*Centralização dos footers*/
-.footer ul, .footerFixo ul {
+footer ul{
     margin: 0px;
     padding: 0%;
     width: 100%;
@@ -282,7 +301,7 @@ input{
     text-align: center;
     font-size: 1em;
 }
-.footer li, .footerFixo li{
+footer li{
     display: table-cell;
     vertical-align: middle;
 } /*Fim do padrão do site*/

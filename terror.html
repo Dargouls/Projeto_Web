@@ -19,131 +19,123 @@
     </head>
 
   <body>
-    
     <script src="Scripts/padraoDoSite.js"></script> <!--Adicionando o HTML padrão do site-->
-    
-    <div class="marcaPagina"> <!--Marca página indicando o conteúdo da página-->
-      <div id="marca-pagina-corpo"> <!--Corpo do marca-página-->
-        <img class="icones" src="Images/Icones/cthulhu.png" alt="">
-        <h1 id="tituloPagina">Terror</h1>
-      </div>
-      <div id="marca-pagina-ponta"></div> <!--Ponta triângular do marca página-->
+    <div class="container-noBootstrap">
+      <aside class="marcaPagina"> <!--Marca página indicando o conteúdo da página-->
+        <div id="marca-pagina-corpo"> <!--Corpo do marca-página-->
+          <img class="icones" src="Images/Icones/cthulhu.png" alt="">
+          <h1 id="tituloPagina">Terror</h1>
+        </div>
+        <div id="marca-pagina-ponta"></div> <!--Ponta triângular do marca página-->
+      </aside>
+      <main id="conteudo"> <!--Todo o conteúdo da página-->
+        <div class="temaFundo" id="oCemiterio">
+          <table class="tabLivro" id="livro-oCemiterio"> <!--Tabela do livro-->
+            <th><img class="capaLivro" src="Images/Capas-Livros/oCemiterio-livro-terror.jpeg" alt=""></th> <!--Capa do livro-->
+            <tr>
+              <td><h2>O cemitério</h2></td>  <!--T�tulo do livro-->
+            </tr>  
+            <tr>
+              <td>  <!--Sinopse-->
+                <p>
+                  Uma série de acontecimentos estranhos se inicia após a morte do gato da família Creed. Aos poucos eles percebem que um antigo cemitério, que fica nos fundos da casa, pode ter ligação com esses eventos.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Data da primeira publicação: 14 de novembro de 1983</p>
+              </td>
+            </tr>
+            <tr>
+              <td> <!--Autor-->
+                <p>Autor: Stephen King</p>
+              </td>
+            </tr>
+            <tr>
+              <td> <!--Link para a compra-->
+                <a class="link" target="_blank" href="https://www.amazon.com.br/cemit%C3%A9rio-Stephen-King/dp/8581050395">
+                  <p class="link">Link para adquirir</p>
+                </a>
+              </td>
+            </tr>
+          </table>
+        </div>
+  
+        <div class="temaFundo" id="coraline">
+          <table class="tabLivro" id="livro-coraline"> <!--Tabela do livro-->
+            <th><img class="capaLivro" src="Images/Capas-Livros/coraline-livro-terror.jpeg" alt=""></th> <!--Capa do livro-->
+            <tr>
+              <td><h2>Coraline</h2></td>  <!--Titulo do livro-->
+            </tr>  
+            <tr>
+              <td>  <!--Sinopse-->
+                <p>
+                  Enquanto explora sua nova casa à noite, a pequena Coraline descobre uma porta secreta que contém um mundo parecido com o dela, porém melhor em muitas maneiras. Todos têm botões no lugar dos olhos, os pais são carinhosos e os sonhos de Coraline viram realidade por lá. Ela se encanta com essa descoberta, mas logo percebe que segredos estranhos estão em ação: uma outra mãe e o resto de sua família tentam mantê-la eternamente nesse mundo paralelo.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Data da primeira publicação: 2 de julho de 2002</p>
+              </td>
+            </tr>
+            <tr>
+              <td> <!--Autor-->
+                <p>Autor: Neil Gaiman</p>
+              </td>
+            </tr>
+            <tr>
+              <td> <!--Link para a compra-->
+                <a class="link" target="_blank" href="https://www.amazon.com.br/Coraline-Deluxe-Classic-Neil-Gaiman/dp/0380977788/ref=mp_s_a_1_4?dchild=1&amp;keywords=Coraline&amp;qid=1604773061&amp;refinements=p_n_feature_browse-bin%3A8561250011&amp;s=books&amp;sr=1-4">
+                  <p class="link">Link para adquirir</p>              
+                </a>
+              </td>
+            </tr>
+          </table>
+        </div>
+  
+        <div class="temaFundo" id="it"> <!--Imagem de fundo de cada tabela-->
+          <table class="tabLivro" id="livro-itACoisa"> <!--Tabela do livro-->
+            <th><img class="capaLivro" src="Images/Capas-Livros/it-livro-terror.jpeg" alt=""></th> <!--Capa do livro-->
+            <tr>
+              <td><h2>It: A Coisa</h2></td>  <!--Titulo do livro-->
+            </tr>  
+            <tr>
+              <td>  <!--Sinopse-->
+                <p class="sinopse-1">
+                  Durante as férias escolares de 1958, em Derry, pacata cidadezinha do Maine, Bill, Richie, Stan, Mike, Eddie, Ben e Beverly aprenderam o real sentido da amizade, do amor, da confiança e… do medo. O mais profundo e tenebroso medo.
+                </p>
+                <p class="sinopse-2">
+                    Naquele verão, eles enfrentaram pela primeira vez a Coisa, um ser sobrenatural e maligno que deixou terríveis marcas de sangue em Derry. 
+                  Quase trinta anos depois, os amigos voltam a se encontrar. 
+                  Uma nova onda de terror tomou a pequena cidade. Mike Hanlon, o único que permanece em Derry, dá o sinal. Precisam unir forças novamente. A Coisa volta a atacar e eles devem cumprir a promessa selada com sangue que fizeram quando crianças. Só eles têm a chave do enigma. Só eles sabem o que se esconde nas entranhas de Derry. O tempo é curto, mas somente eles podem vencer a Coisa. 
+                  Em “It – A Coisa”, clássico de Stephen King em nova edição, os amigos irão até o fim, mesmo que isso signifique ultrapassar os próprios limites.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Data da primeira publicação: 15 de setembro de 1986</p>
+              </td>
+            </tr>
+            <tr>
+              <td> <!--Autor-->
+                <p>Autor: Stephen King</p>
+              </td>
+            </tr>
+            <tr>
+              <td> <!--Link para a compra-->
+                <a class="link" target="_blank" href="https://www.amazon.com.br/coisa-Stephen-King/dp/8560280944">
+                  <p class="link">Link para adquirir</p>
+                </a>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </main>
     </div>
     
-    <div id="conteudo"> <!--Todo o conteúdo da página-->
-      <div class="temaFundo" id="oCemiterio">
-        <table class="tabLivro" id="livro-oCemiterio"> <!--Tabela do livro-->
-          <th><img class="capaLivro" src="Images/Capas-Livros/oCemiterio-livro-terror.jpeg" alt=""></th> <!--Capa do livro-->
-          <tr>
-            <td><h2>O cemitério</h2></td>  <!--T�tulo do livro-->
-          </tr>  
-          <tr>
-            <td>  <!--Sinopse-->
-              <p>
-                Uma série de acontecimentos estranhos se inicia após a morte do gato da família Creed. Aos poucos eles percebem que um antigo cemitério, que fica nos fundos da casa, pode ter ligação com esses eventos.
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Data da primeira publicação: 14 de novembro de 1983</p>
-            </td>
-          </tr>
-          <tr>
-            <td> <!--Autor-->
-              <p>Autor: Stephen King</p>
-            </td>
-          </tr>
-          <tr>
-            <td> <!--Link para a compra-->
-              <a class="link" target="_blank" href="https://www.amazon.com.br/cemit%C3%A9rio-Stephen-King/dp/8581050395">
-                <p class="link">Link para adquirir</p>
-              </a>
-            </td>
-          </tr>
-        </table>
-      </div>
-
-      <div class="temaFundo" id="coraline">
-        <table class="tabLivro" id="livro-coraline"> <!--Tabela do livro-->
-          <th><img class="capaLivro" src="Images/Capas-Livros/coraline-livro-terror.jpeg" alt=""></th> <!--Capa do livro-->
-          <tr>
-            <td><h2>Coraline</h2></td>  <!--Titulo do livro-->
-          </tr>  
-          <tr>
-            <td>  <!--Sinopse-->
-              <p>
-                Enquanto explora sua nova casa à noite, a pequena Coraline descobre uma porta secreta que contém um mundo parecido com o dela, porém melhor em muitas maneiras. Todos têm botões no lugar dos olhos, os pais são carinhosos e os sonhos de Coraline viram realidade por lá. Ela se encanta com essa descoberta, mas logo percebe que segredos estranhos estão em ação: uma outra mãe e o resto de sua família tentam mantê-la eternamente nesse mundo paralelo.
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Data da primeira publicação: 2 de julho de 2002</p>
-            </td>
-          </tr>
-          <tr>
-            <td> <!--Autor-->
-              <p>Autor: Neil Gaiman</p>
-            </td>
-          </tr>
-          <tr>
-            <td> <!--Link para a compra-->
-              <a class="link" target="_blank" href="https://www.amazon.com.br/Coraline-Deluxe-Classic-Neil-Gaiman/dp/0380977788/ref=mp_s_a_1_4?dchild=1&amp;keywords=Coraline&amp;qid=1604773061&amp;refinements=p_n_feature_browse-bin%3A8561250011&amp;s=books&amp;sr=1-4">
-                <p class="link">Link para adquirir</p>              
-              </a>
-            </td>
-          </tr>
-        </table>
-      </div>
-
-      <div class="temaFundo" id="it"> <!--Imagem de fundo de cada tabela-->
-        <table class="tabLivro" id="livro-itACoisa"> <!--Tabela do livro-->
-          <th><img class="capaLivro" src="Images/Capas-Livros/it-livro-terror.jpeg" alt=""></th> <!--Capa do livro-->
-          <tr>
-            <td><h2>It: A Coisa</h2></td>  <!--Titulo do livro-->
-          </tr>  
-          <tr>
-            <td>  <!--Sinopse-->
-              <p class="sinopse-1">
-                Durante as férias escolares de 1958, em Derry, pacata cidadezinha do Maine, Bill, Richie, Stan, Mike, Eddie, Ben e Beverly aprenderam o real sentido da amizade, do amor, da confiança e… do medo. O mais profundo e tenebroso medo.
-              </p>
-              <p class="sinopse-2">
-                  Naquele verão, eles enfrentaram pela primeira vez a Coisa, um ser sobrenatural e maligno que deixou terríveis marcas de sangue em Derry. 
-                Quase trinta anos depois, os amigos voltam a se encontrar. 
-                Uma nova onda de terror tomou a pequena cidade. Mike Hanlon, o único que permanece em Derry, dá o sinal. Precisam unir forças novamente. A Coisa volta a atacar e eles devem cumprir a promessa selada com sangue que fizeram quando crianças. Só eles têm a chave do enigma. Só eles sabem o que se esconde nas entranhas de Derry. O tempo é curto, mas somente eles podem vencer a Coisa. 
-                Em “It – A Coisa”, clássico de Stephen King em nova edição, os amigos irão até o fim, mesmo que isso signifique ultrapassar os próprios limites.
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Data da primeira publicação: 15 de setembro de 1986</p>
-            </td>
-          </tr>
-          <tr>
-            <td> <!--Autor-->
-              <p>Autor: Stephen King</p>
-            </td>
-          </tr>
-          <tr>
-            <td> <!--Link para a compra-->
-              <a class="link" target="_blank" href="https://www.amazon.com.br/coisa-Stephen-King/dp/8560280944">
-                <p class="link">Link para adquirir</p>
-              </a>
-            </td>
-          </tr>
-        </table>
-      </div>
-    </div>
     
-    <div class="footer"> <!--Footer da página-->
-      <ul>
-        <li><span>© EbookReader 2020</span></li>
-        <li id="email"><span>SAC: SuporteAL@hotmail.com</span></li>
-        <li><a  class="link" target="_blank" href="https://github.com/JosivaldoGabriel/Projeto_Web">
-          Link para o repositório no Github</a></li>
-      </ul>
-    </div>
   </body>
 </html>
