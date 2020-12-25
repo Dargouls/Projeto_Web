@@ -5,6 +5,7 @@ const senhaForm = document.getElementById("input-senha");
 const btnNaoAceitarTermos = document.getElementById("btn-nao-aceitar-termos");
 const btnAceitarTermos = document.getElementById("btn-aceitar-termos");
 const btnSubmit = document.getElementById("btn-criar-conta");
+const divSubmit = document.getElementById("criar-conta");
 var termos = false;
 
 placeholders();
@@ -29,8 +30,9 @@ function validar(){
         nomeForm.focus();
     } else {
 		if (termos) {
-			alert("Conta criada com sucesso!")
+			alert("Conta criada com sucesso!");
 		} else{
+			divSubmit.style.display = "none";
 			btnSubmit.setAttribute("data-toggle", "modal");
 		}
 	}
@@ -52,8 +54,10 @@ function aceitarTermos() {
 	//Quando o usuário aceitar os termos e condições, o botão poderá enviar o formulário
 	termos = true;
 	btnSubmit.setAttribute("type", "submit");
-	btnSubmit.style = "background-color: #837bf3; color: white";
+	btnSubmit.value = "Criar a conta";
+	divSubmit.style.display = "block";
 }
 function naoAceitarTermos() {
 	termos = false;
+	divSubmit.style.display = "block";
 }
