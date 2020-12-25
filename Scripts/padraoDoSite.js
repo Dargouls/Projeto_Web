@@ -48,6 +48,20 @@ var header = '<header> <!--Barra superior-->'+ //Header padrão do site
 '</header>';
 document.body.innerHTML = header;
 
+var footer ='<footer>'+
+	'<ul> <!--Adicionar botão do github para dispositivos menores-->'+
+		'<li><span>© EbookReader 2020</span></li>'+
+		'<li id="email"><span>SAC: SuporteAL@hotmail.com</span></li>'+
+		'<li id="link-github"><a  class="link" target="_blank" href="https://github.com/JosivaldoGabriel/Projeto_Web">'+
+	'Link para o repositório no Github</a></li>'+
+		'<li id="follow-github">'+
+		'<a target="_blank" href="https://github.com/JosivaldoGabriel/Projeto_Web">'+
+		'<button id="btn-github"><img id="img-github" src="Images/github-follow-button.png">'+
+		'<span>Github</span></button></a></li>'+
+	'</ul>'+
+'</footer>';
+document.body.innerHTML += footer;
+
 var logoSite = document.querySelector("#img-logo");
 var dropdownAtivo = false;
 var tituloPagina = document.querySelector("title").innerText;
