@@ -31,6 +31,10 @@ body{
     top: 150px;
     
 }
+#botoes-selecionar-arquivo{
+    display: inline-flex;
+    transition: transform 0.5s ease-in-out;
+}
 #lerPDF{ /*Botão para ler um documento*/
     padding: 0;
     width: 400px;/*30%;*/
@@ -42,17 +46,41 @@ body{
     line-height: 50px;
     color: white;
     text-align: center;
-    border-style: dotted;
-    transition: background-color 0.25s ease-in-out, box-shadow 0.35s ease-out;
+    border: 1.5px dotted #4e446f;
+    border-right: none;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    outline-style: none;
+    transition: background-color 0.25s ease-in-out, box-shadow 0.35s ease-out, transform 0.35s ease-out;
 }
 #lerPDF:hover{ /*Evento ao passar o mouse em cima*/
     background: rgb(131, 123, 243);
     box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.7);
     
 }
-#label-selecionar-arquivo{
-    padding: 50px;
+#mostrar-arquivo{
+    position: relative;
+    width: 0px;
+    height: 150px;
+    box-sizing: border-box;
+    background-color: #ececec;
+    outline-style: none;
+    border: 7px solid #c7c7c7;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-left: none;
+    border-top: none;
+    transition: width 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55), transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out, background-color 0.25s ease-in-out;
 }
+#mostrar-arquivo > p{
+    font-size: 1.3em;
+    color: black;
+}
+#mostrar-arquivo:hover{
+    background-color: rgb(226, 226, 226);
+}
+
 #selecionar-arquivo{
     display: none;
 }

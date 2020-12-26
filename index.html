@@ -26,13 +26,16 @@
         <div id="interface">
           <h1>Bem-vindo</h1>
           <p>Use o botão abaixo para <b>selecionar um Ebook</b> no seu <b>PC</b></p>
-          <button type="button" id="lerPDF">
-            <label id="label-selecionar-arquivo" for="selecionar-arquivo">Selecione um PDF</label></button>
+          <div id="botoes-selecionar-arquivo">
+            <button type="button" id="lerPDF">Selecione um PDF</button>
+            <button id="mostrar-arquivo" disabled></button>
+          </div>
           <input type="file" id="selecionar-arquivo" accept=".pdf">
-          <p>Boa leitura :D</p>
+          <p class="fonte-branca">Boa leitura :D</p>
         </div>
       </main>
     </div>
     
+    <script src="Scripts/index.js"></script>
   </body>
 </html>

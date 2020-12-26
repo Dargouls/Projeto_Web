@@ -114,7 +114,7 @@ label{
     height: 2px;
     width: 50%;
     border-bottom: 2px solid #837bf3;
-    transition: all .15s ease-in-out;
+    transition: all .15s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 #criar-conta:hover::after{
     content: "";
