@@ -213,6 +213,7 @@ header a { /*Tirando decorações dos links*/
 /*Botão dropdown*/
 #dropdown {
     display: inline-block;
+    cursor: pointer;
 }
 #dropdown-mobile { /*Como o div do dropdown será mostrado*/
     white-space: nowrap; /*Para a linha não quebrar com o espaço*/
