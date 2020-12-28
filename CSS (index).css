@@ -20,7 +20,7 @@ body{
         background-repeat: no-repeat;
     }
 }
-#meio{
+#conteudo{
     background-color: #18191a;
     height: 225px;
 }
@@ -63,6 +63,7 @@ body{
     width: 0px;
     height: 150px;
     box-sizing: border-box;
+    overflow: hidden;
     background-color: #ececec;
     outline-style: none;
     border: 7px solid #c7c7c7;
@@ -71,7 +72,7 @@ body{
     border-top-left-radius: 0;
     border-left: none;
     border-top: none;
-    transition: width 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55), transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out, background-color 0.25s ease-in-out;
+    transition: width 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55), transform 0.5s ease-in-out;
 }
 #mostrar-arquivo > p{
     font-size: 1.3em;
@@ -80,7 +81,24 @@ body{
 #mostrar-arquivo:hover{
     background-color: rgb(226, 226, 226);
 }
-
+#mostrar-arquivo::before{
+    content: "";
+    position: absolute;
+    left: 40%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #a2a2a200;
+    transition: transform 0.7s cubic-bezier(0.68, -0.55, 0.27, 1.55), background-color 0.4s ease-in-out;
+}
+#mostrar-arquivo:hover::before{
+    background-color: #a2a2a24a;
+    transform: scale(3);
+}
+.referencia{
+    font-style: italic;
+    color: #8e8e8e;
+}
 #selecionar-arquivo{
     display: none;
 }
