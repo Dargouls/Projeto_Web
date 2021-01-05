@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="pt-br">
+	<head> 
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Meus livros</title>
+		<link rel="stylesheet" href="CSS (padraoDoSite).css">
+    <link rel="stylesheet" href="CSS (minhaConta).css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="Images/ebook.png">
+		<link rel="stylesheet" href="Images/Logo do site.png">
+		<link rel="stylesheet" href="Images/Madeira clara.png">
+		<link rel="stylesheet" href="Images/Madeira escura.jpg">
+		<link rel="shortcut icon" href="ebook.ico">
+	</head>
+
+	<body>
+    <script src="Scripts/padraoDoSite.js"></script> <!--Adicionando o HTML padrão do site-->
+    
+    <main id="main">
+      <button class="ordenar" onclick="ordenar()">Ordenar</button> <!--será um botão de ordenar em ordem alfabética ou por recentes-->
+
+      <div class="livrosOrdenadosDIV" id="numeros-simbolos"> <!--Será retirado, mas a ideia é q se o livro n começar com letras, irá para esta divisão-->
+        <p class="livrosOrdenados"># Livros com números/símbolos</p>
+      </div>
+
+      <!--Mensagem no centro do <main> para caso o usuário não tiver feito upload de nada
+        <div><p>Não há eBooks ainda. Faça upload de algum para ler</p></div>
+      -->
+      <!--Esses livros são apenas para testar a página mesmo-->
+      <div class="livro" id="livro-100" onclick="mostrarInformacoesLivro()">
+        <div class="imagemCapa"></div>
+        <div class="informacoes">
+          <p class="titulo fonte-preta">aLorem ipsum</p>
+          <p class="descricao fonte-preta">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sollicitudin odio dolor, sed posuere massa auctor nec. Curabitur consequat tempor semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere ut elit pulvinar efficitur. Nullam eget pharetra justo. Donec auctor nisi leo, ac semper mi congue lobortis. Curabitur rhoncus, felis pharetra iaculis iaculis, purus velit vestibulum orci, at consequat lorem est eu velit.</p>
+        </div>
+      </div>
+      <div class="livro" id="livro-100" onclick="mostrarInformacoesLivro()">
+        <div class="imagemCapa"></div>
+        <div class="informacoes">
+          <p class="titulo fonte-preta">ALorem ipsum</p>
+          <p class="descricao fonte-preta">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sollicitudin odio dolor, sed posuere massa auctor nec. Curabitur consequat tempor semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere ut elit pulvinar efficitur. Nullam eget pharetra justo. Donec auctor nisi leo, ac semper mi congue lobortis. Curabitur rhoncus, felis pharetra iaculis iaculis, purus velit vestibulum orci, at consequat lorem est eu velit.</p>
+        </div>
+      </div>
+      <div class="livro" id="livro-101" onclick="mostrarInformacoesLivro()">
+        <div class="imagemCapa"></div>
+        <div class="informacoes">
+          <p class="titulo fonte-preta">bLorem ipsum</p>
+          <p class="descricao fonte-preta">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sollicitudin odio dolor, sed posuere massa auctor nec. Curabitur consequat tempor semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere ut elit pulvinar efficitur. Nullam eget pharetra justo. Donec auctor nisi leo, ac semper mi congue lobortis. Curabitur rhoncus, felis pharetra iaculis iaculis, purus velit vestibulum orci, at consequat lorem est eu velit.</p>
+        </div>
+      </div>
+      <div class="livro" id="livro-102" onclick="mostrarInformacoesLivro()">
+        <div class="imagemCapa"></div>
+        <div class="informacoes">
+          <p class="titulo fonte-preta">cLorem ipsum</p>
+          <p class="descricao fonte-preta">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sollicitudin odio dolor, sed posuere massa auctor nec. Curabitur consequat tempor semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere ut elit pulvinar efficitur. Nullam eget pharetra justo. Donec auctor nisi leo, ac semper mi congue lobortis. Curabitur rhoncus, felis pharetra iaculis iaculis, purus velit vestibulum orci, at consequat lorem est eu velit.</p>
+        </div>
+      </div>
+      <div class="livro" id="livro-103" onclick="mostrarInformacoesLivro()">
+        <div class="imagemCapa"></div>
+        <div class="informacoes">
+          <p class="titulo fonte-preta">dLorem ipsum</p>
+          <p class="descricao fonte-preta">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sollicitudin odio dolor, sed posuere massa auctor nec. Curabitur consequat tempor semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere ut elit pulvinar efficitur. Nullam eget pharetra justo. Donec auctor nisi leo, ac semper mi congue lobortis. Curabitur rhoncus, felis pharetra iaculis iaculis, purus velit vestibulum orci, at consequat lorem est eu velit.</p>
+        </div>
+      </div>
+      <div class="livro" id="livro-104" onclick="mostrarInformacoesLivro()">
+        <div class="imagemCapa"></div>
+        <div class="informacoes">
+          <p class="titulo fonte-preta">eLorem ipsum</p>
+          <p class="descricao fonte-preta">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sollicitudin odio dolor, sed posuere massa auctor nec. Curabitur consequat tempor semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere ut elit pulvinar efficitur. Nullam eget pharetra justo. Donec auctor nisi leo, ac semper mi congue lobortis. Curabitur rhoncus, felis pharetra iaculis iaculis, purus velit vestibulum orci, at consequat lorem est eu velit.</p>
+        </div>
+      </div>
+    </main>
+    <aside>
+      <div id="alfabeto">
+        <p id="letra">#</p>
+      </div>
+      <div class="list-group" id="lista-alfabetica">
+        <a class="list-group-item list-group-item-action bg-warning text-white" id="ℤ" onmouseenter="mostrarLetra(this)"></a>
+        <a class="list-group-item list-group-item-action bg-dark text-white" id="A" onmouseenter="mostrarLetra(this)" href="#A-letra"></a>
+        <a class="list-group-item list-group-item-action bg-warning text-white" id="B" onmouseenter="mostrarLetra(this)" href="#B-letra"></a>
+        <a class="list-group-item list-group-item-action bg-dark text-white" id="C" onmouseenter="mostrarLetra(this)" href="#C-letra"></a>
+        <a class="list-group-item list-group-item-action bg-warning text-white" id="D" onmouseenter="mostrarLetra(this)" href="#D-letra"></a>
+        <a class="list-group-item list-group-item-action bg-dark text-white" id="E" onmouseenter="mostrarLetra(this)" href="#E-letra"></a>
+        <a class="list-group-item list-group-item-action bg-warning text-white" id="F" onmouseenter="mostrarLetra(this)" href="#F-letra"></a>
+        <a class="list-group-item list-group-item-action bg-dark text-white" id="G" onmouseenter="mostrarLetra(this)" href="#G-letra"></a>
+        <a class="list-group-item list-group-item-action bg-warning text-white" id="H" onmouseenter="mostrarLetra(this)" href="#H-letra"></a>
+        <a class="list-group-item list-group-item-action bg-dark text-white" id="I" onmouseenter="mostrarLetra(this)" href="#I-letra"></a>
+        <a class="list-group-item list-group-item-action bg-warning text-white" id="J" onmouseenter="mostrarLetra(this)" href="#J-letra"></a>
+        <a class="list-group-item list-group-item-action bg-dark text-white" id="K" onmouseenter="mostrarLetra(this)" href="#K-letra"></a>
+        <a class="list-group-item list-group-item-action bg-warning text-white" id="L" onmouseenter="mostrarLetra(this)" href="#L-letra"></a>
+        <a class="list-group-item list-group-item-action bg-dark text-white" id="M" onmouseenter="mostrarLetra(this)" href="#M-letra"></a>
+        <a class="list-group-item list-group-item-action bg-warning text-white" id="N" onmouseenter="mostrarLetra(this)" href="#N-letra"></a>
+        <a class="list-group-item list-group-item-action bg-dark text-white" id="O" onmouseenter="mostrarLetra(this)" href="#O-letra"></a>
+        <a class="list-group-item list-group-item-action bg-warning text-white" id="P" onmouseenter="mostrarLetra(this)" href="#P-letra"></a>
+        <a class="list-group-item list-group-item-action bg-dark text-white" id="Q" onmouseenter="mostrarLetra(this)" href="#Q-letra"></a>
+        <a class="list-group-item list-group-item-action bg-warning text-white" id="R" onmouseenter="mostrarLetra(this)" href="#R-letra"></a>
+        <a class="list-group-item list-group-item-action bg-dark text-white" id="S" onmouseenter="mostrarLetra(this)" href="#S-letra"></a>
+        <a class="list-group-item list-group-item-action bg-warning text-white" id="T" onmouseenter="mostrarLetra(this)" href="#T-letra"></a>
+        <a class="list-group-item list-group-item-action bg-dark text-white" id="U" onmouseenter="mostrarLetra(this)" href="#U-letra"></a>
+        <a class="list-group-item list-group-item-action bg-warning text-white" id="V" onmouseenter="mostrarLetra(this)" href="#V-letra"></a>
+        <a class="list-group-item list-group-item-action bg-dark text-white" id="W" onmouseenter="mostrarLetra(this)" href="#W-letra"></a>
+        <a class="list-group-item list-group-item-action bg-warning text-white" id="X" onmouseenter="mostrarLetra(this)" href="#X-letra"></a>
+        <a class="list-group-item list-group-item-action bg-dark text-white" id="Y" onmouseenter="mostrarLetra(this)" href="#Y-letra"></a>
+        <a class="list-group-item list-group-item-action bg-warning text-white" id="Z" onmouseenter="mostrarLetra(this)" href="#Z-letra"></a>        
+      </div>
+    </aside>
+    <!-- Local que, quando um livro for clicado, será mostradas as informações sobre e um trecho de onde o usuário parou-->
+    <div class="fundo-escuro" onclick="clarearTela()"></div>
+
+      <section class="painel-livro" id="mostrar-livro">
+        <div id="trecho-livro">
+          <iframe id="trecho-iframe" src="https://mozilla.github.io/pdf.js/web/viewer.html" width="100%" height="100%" frameborder="0"></iframe>
+        </div>
+        <div id="dados-livro">
+          <p class="fonte-preta" id="titulo-livro"><span>Lorem ipsum dolor sit amet.</span></p>
+          <p class="fonte-preta" id="autor-livro"><span>Autor: </span><span>Ipsum.</span></p>
+          <p class="fonte-preta" id="lido-ultima-vez"><span>Última vez lido: </span><span>11-11</span></p>
+          <p class="fonte-preta" id="lido-primeira-vez"><span>Primeira vez lido: </span><span>11-11</span></p>
+        </div>
+        <a href="leitura.html" id="ler-livro">Continuar lendo</a>
+      </section>
+    
+    
+    <script src="Scripts/minhaConta.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	</body>
+</html>

@@ -3,13 +3,13 @@
 
 html{
     scroll-behavior: smooth;
-    overflow-y: overlay;;
+    overflow-y: overlay;
 }
 body{ /*grid padrão do site: header > conteúdo > footer*/
     margin: 0%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: [header]100px [main]1fr [footer]35px;
+    grid-template-rows: [header]100px [container]1fr [footer]35px;
     grid-template-areas: "header header" "container container" "footer footer";
     min-height: 100vh;
 }
@@ -36,6 +36,7 @@ body{ /*grid padrão do site: header > conteúdo > footer*/
 header {
     display: flex;
     grid-area: header;
+    z-index: 2;
     background-image: url("Images/Madeira clara.png");
     box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.5);
 }
@@ -45,6 +46,16 @@ header {
     width: 15em;
     text-align: right;
     transition: opacity 0.1s ease-in-out;
+}
+#li-conta{
+    display: none;
+    margin: 0;
+}
+#conta{
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50%;
 }
 #follow-github{
     display: none;
@@ -86,7 +97,7 @@ header {
         outline: none;
     }
     .botoesLogin:focus{
-        border: 2px solid rgb(123, 123, 221);
+        border: 2px solid #7b7bdd;
     }
     nav a{
         transition: all 0.2s ease-out;
@@ -265,6 +276,9 @@ p, h1, h2, h3 { /*Lembrar de mudar o tamanho das fontes de px para em*/
     color: rgb(230, 230, 230);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+.fonte-preta{
+    color: #131313
+}
 span{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -283,6 +297,7 @@ input{
 }
 footer { /*Footer*/
     grid-area: footer;
+    z-index: 2;
     background-image: url("Images/Madeira escura.jpg");
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;

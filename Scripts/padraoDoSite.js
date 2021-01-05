@@ -14,7 +14,6 @@ var header = '<header> <!--Barra superior-->'+ //Header padrão do site
 	  '<div class="dropdownContent"> <!--Conteúdo do dropdown-->'+
 		'<a href="index.html"><span>Início</span></a>'+
 		'<a href="cadastro.html#formulario-cadastro"><span>Criar conta</span></a>'+
-		'<a href="leitura.html"><span>PDF (retirar)</span></a>'+
 		'<a href="sobre.html"><span>Sobre</span></a>'+
 		'<a href="generos.html"><span>Indicações de Livros</span></a>'+
 		'<a href="escritores.html"><span>Hall dos escritores</span></a>'+
@@ -23,8 +22,6 @@ var header = '<header> <!--Barra superior-->'+ //Header padrão do site
 	'<!--Monitores-->'+
 	'<ul id="botoes-navegacao"> <!--Lista para organizar os botões-->'+
 	  '<li class="navButton"><a href="index.html">Início</a></li>'+
-	  '<li class="navButton"><a href="leitura.html">PDF (retirar)</a></li> <!--Esse botão está sendo mostrado apenas a fim de ver todas as páginas do site. Será retirado no momento q houver JS-->'+
-	  '<li class="navButton"><a href="sobre.html">Sobre</a></li>'+
 	  '<li class="navButton" id="dropdown"> <!--Botão com dropdown-->'+
 		'<a class="dropbtn">Livros ↓</a> <!--Texto do botão-->'+
 		'<div class="dropdownContent"> <!--Conteúdo do dropdown-->'+
@@ -32,11 +29,15 @@ var header = '<header> <!--Barra superior-->'+ //Header padrão do site
 		  '<a href="escritores.html">Hall dos Escritores</a>'+
 		'</div>'+
 	  '</li>'+
+	  '<li class="navButton"><a href="sobre.html">Sobre</a></li>'+
 	'</ul>'+
   '</nav>'+
   '<!--nav dos botões de entrar ou criar conta no site-->'+
   '<nav id="gerenciar-conta">'+
 	'<ul id="ul-gerenciar-conta">'+
+		'<li id="li-conta">'+
+		'<div id="conta"></div>'+
+		'</li>'+
 	  '<li>'+
 		'<a class="botoesLogin" id="login" href="entrar.html#formulario-entrar"><span>Entrar</span></a>'+
 	  '</li>'+
