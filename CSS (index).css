@@ -46,7 +46,7 @@ body{
     line-height: 50px;
     color: white;
     text-align: center;
-    border: 1.5px dotted #4e446f;
+    border: 2px dotted #4e446f;
     border-right: none;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
@@ -89,10 +89,10 @@ body{
     height: 100px;
     border-radius: 50%;
     background-color: #a2a2a200;
-    transition: transform 0.7s cubic-bezier(0.68, -0.55, 0.27, 1.55), background-color 0.4s ease-in-out;
+    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55), background-color 0.4s ease-in-out;
 }
 #mostrar-arquivo:hover::before{
-    background-color: #a2a2a24a;
+    background-color: #9d97fd3d;
     transform: scale(3);
 }
 .referencia{
