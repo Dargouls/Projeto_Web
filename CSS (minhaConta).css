@@ -39,13 +39,19 @@ aside{
 }
 #alfabeto{
   grid-area: alfabeto;
+  position: sticky;
   font-weight: 600;
   font-size: 150px;
   margin-top: 25vh;
+  top: 30vh;
+  height: 250px;
 }
 #lista-alfabetica{
   grid-area: lista;
+  position: sticky;
   margin-top: 20px;
+  top: -40vh;
+  height: 850px;
 }
 main{
   grid-area: main;
@@ -114,7 +120,7 @@ main{
   text-align: center;
   background-color: whitesmoke;
   /*opacity: 0;*/
-  transition: all 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out, opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
 }
 .painel-livro:not(.mostrar){
   /*display: none;*/
