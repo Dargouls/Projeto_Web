@@ -2,8 +2,8 @@
 
 //Variáveis
 var header = '<header> <!--Barra superior-->'+ //Header padrão do site
-'<a id="link-logo" href="index.html"><img id="img-logo" src="Images/Logo do site.png" alt=""></a>'+
-  '<nav id="navegacao-site"> <!--Botões de navegação-->'+
+'<div id="logo" class="fixo"><a id="link-logo" href="index.html"><img id="img-logo" src="Images/Logo do site.png" alt=""></a></div>'+
+  '<nav id="navegacao-site" class="fixo"> <!--Botões de navegação-->'+
 	'<!--Celulares em modo retrato-->'+
 	'<div id="dropdown-mobile"> <!--Botão com dropdown-->'+
 	  '<button type="button" onclick="dropbtn()" class="dropbtn" id="hamburguer-button"> <!--Botão feito sem imagem, apenas CSS-->'+
@@ -33,7 +33,7 @@ var header = '<header> <!--Barra superior-->'+ //Header padrão do site
 	'</ul>'+
   '</nav>'+
   '<!--nav dos botões de entrar ou criar conta no site-->'+
-  '<nav id="gerenciar-conta">'+
+  '<nav id="gerenciar-conta" class="fixo">'+
 	'<ul id="ul-gerenciar-conta">'+
 		'<li id="li-conta">'+
 		'<div id="conta"></div>'+
@@ -63,9 +63,10 @@ var footer ='<footer>'+
 '</footer>';
 document.body.innerHTML += footer;
 
-var logoSite = document.querySelector("#img-logo");
+const logoSite = document.querySelector("#img-logo");
 var dropdownAtivo = false;
-var tituloPagina = document.querySelector("title").innerText;
+const tituloPagina = document.querySelector("title").innerText;
+var header = document.querySelector("header");
 
 //Carregamento da página
 if (tituloPagina == "EbookReader") {
@@ -73,6 +74,15 @@ if (tituloPagina == "EbookReader") {
 } else {
 	document.querySelector("title").innerText += " - EbookReader";
 }
+window.addEventListener("scroll", function(){
+	if (window.scrollY > 100){
+		header.style = "transform: scale(1.05, 1.05);"
+		header.style.opacity = "0";
+	} else{
+		header.style = "transform: scale(1, 1);"
+		header.style.opacity = "1";
+	}
+})
 
 //Funções
 function dropbtn(){
