@@ -32,7 +32,7 @@ function esconderArquivo(){
   arquivoSelecionado.setAttribute("disabled");
 }
 function lerArquivo(){
-  botoesArquivoDIV.style = "transform: scale(1.2); background-color: rgba(0, 0, 0, 0.7); box-shadow: 0px 0px 250px 300px rgba(0, 0, 0, 0.7);";
+  botoesArquivoDIV.style = "transform: scale(1.2); background-color: rgba(0, 0, 0, 0.7); box-shadow: 0px 0px 100vw 100vh rgba(0, 0, 0, 0.7);";
   arquivoSelecionado.style = " width: 400px; transform: scale(1.1) translateX(-140px);"
   lerPDF.style = "transform: translateX(200px);"
   setTimeout(function() {window.location.href = "leitura.html"}, 1000);

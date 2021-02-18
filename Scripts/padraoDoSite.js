@@ -76,11 +76,9 @@ if (tituloPagina == "EbookReader") {
 }
 window.addEventListener("scroll", function(){
 	if (window.scrollY > 100){
-		header.style = "transform: scale(1.05, 1.05);"
-		header.style.opacity = "0";
+		header.style = "transform: translateY(-120px);"
 	} else{
-		header.style = "transform: scale(1, 1);"
-		header.style.opacity = "1";
+		header.style = "transform: translateY(0);"
 	}
 })
 
