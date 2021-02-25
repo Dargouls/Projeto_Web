@@ -9,4 +9,6 @@ Link do projeto no git pages: https://josivaldogabriel.github.io/Projeto_Web/
 
 Sem mais entregas.
 
+Objetivos pós-entrega: remodelar a página "sobre"; responsividade na página "minhaConta".
+
 3.3) Integrantes da equipe: Josivaldo Gabriel Azevedo dos Santos; José Paulo dos Santos Dias; Shirley Matias da Silva; Jaciel Jorge da Silva; Franklin Diego da Silva Tavares.
