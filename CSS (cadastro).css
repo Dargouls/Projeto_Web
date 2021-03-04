@@ -109,18 +109,15 @@ label{
         right: 100%;
     }
 }
-#criar-conta::after{
-    content: "";
+.linhaQuebra{
     display: inline-block;
-    height: 2px;
-    width: 50%;
-    border-bottom: 2px solid #837bf3;
-    transition: all .15s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-}
-#criar-conta:hover::after{
-    content: "";
-    width: 100%;
+    width: 120px;
+    border: 0;
+    border-top: 1px solid #5b59e4;
 }
 .link-entrar{ /*Link para caso o usuário já tenha uma conta*/
     color: #999999;
+}
+.link-entrar a{
+    text-decoration: underline;
 }
